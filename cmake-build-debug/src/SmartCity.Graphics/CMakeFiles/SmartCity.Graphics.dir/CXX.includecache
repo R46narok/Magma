@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/SmartCity.Domain/Core.h
+cstdint
+-
+
+../include/SmartCity.Domain/CpuBuffer.h
+SmartCity.Domain/Core.h
+../include/SmartCity.Domain/SmartCity.Domain/Core.h
+SmartCity.Domain/Types.h
+../include/SmartCity.Domain/SmartCity.Domain/Types.h
+array
+-
+optional
+-
+mutex
+-
+
+../include/SmartCity.Domain/Types.h
+memory
+-
+functional
+-
+
+D:/Development/Projects/SmartCity/src/SmartCity.Graphics/Buffer.cpp
+SmartCity.Domain/CpuBuffer.h
+D:/Development/Projects/SmartCity/src/SmartCity.Graphics/SmartCity.Domain/CpuBuffer.h
+

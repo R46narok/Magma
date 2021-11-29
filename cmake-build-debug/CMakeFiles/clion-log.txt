@@ -1,0 +1,9 @@
+"D:\Development\Software\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" D:\Development\Projects\Magma
+-- Build Magma: 0.0.1
+-- Including Win32 support
+-- Build spdlog: 1.5.0
+-- Build type: Debug
+-- GLM: Version 0.9.9.9
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Development/Projects/Magma/cmake-build-debug

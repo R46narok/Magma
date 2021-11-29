@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/SmartCity.Domain/Core.h
+
+../include/SmartCity.Domain/Definitions.h
+
+../include/SmartCity.Domain/PoolAllocator.h
+SmartCity.Domain/Core.h
+../include/SmartCity.Domain/SmartCity.Domain/Core.h
+SmartCity.Domain/Types.h
+../include/SmartCity.Domain/SmartCity.Domain/Types.h
+SmartCity.Domain/Definitions.h
+../include/SmartCity.Domain/SmartCity.Domain/Definitions.h
+
+../include/SmartCity.Domain/Types.h
+memory
+-
+functional
+-
+
+D:/Development/Projects/SmartCity/src/SmartCity.Domain/PoolAllocator.cpp
+SmartCity.Domain/PoolAllocator.h
+D:/Development/Projects/SmartCity/src/SmartCity.Domain/SmartCity.Domain/PoolAllocator.h
+optional
+-
+mutex
+-
+queue
+-
+

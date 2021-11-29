@@ -1,0 +1,8 @@
+//
+// Created by Acer on 12.11.2021 г..
+//
+
+#ifndef SMARTCITY_COMPUTEPIPELINE_H
+#define SMARTCITY_COMPUTEPIPELINE_H
+
+#endif //SMARTCITY_COMPUTEPIPELINE_H

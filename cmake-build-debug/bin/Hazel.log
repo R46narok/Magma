@@ -1,0 +1,7 @@
+[18:44:55] [info] CORE: VkInstance created
+[18:44:55] [info] CORE: Using GPU: NVIDIA GeForce GTX 1060
+[18:44:55] [info] CORE: Properties: 
+                 limits.maxMemoryAllocationCount: 4096
+                 limits.maxPushConstantsSize: 256
+[18:44:57] [info] CORE: Swapchain created
+[18:44:57] [info] CORE: Created graphics pipeline

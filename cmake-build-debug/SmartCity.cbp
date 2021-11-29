@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="SmartCity"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\submodules\;CMake Files\submodules\glfw\;CMake Files\submodules\glfw\CMake\;CMake Files\submodules\glfw\src\;CMake Files\submodules\spdlog\;CMake Files\submodules\spdlog\cmake\;CMake Files\submodules\glm\;CMake Files\submodules\glm\glm\;CMake Files\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Development/Projects/SmartCity/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SmartCity.Client">
+				<Option output="D:/Development/Projects/SmartCity/cmake-build-debug/bin/SmartCity.Client.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/SmartCity/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_SmartCity_Core"/>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/spdlog/include"/>
+					<Add directory="D:/Development/Projects/SmartCity/src"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/glfw/include"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/glm"/>
+					<Add directory="D:/Development/VulkanSDK/1.2.135.0/Include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 SmartCity.Client"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SmartCity.Client/fast">
+				<Option output="D:/Development/Projects/SmartCity/cmake-build-debug/bin/SmartCity.Client.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/SmartCity/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_SmartCity_Core"/>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/spdlog/include"/>
+					<Add directory="D:/Development/Projects/SmartCity/src"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/glfw/include"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/glm"/>
+					<Add directory="D:/Development/VulkanSDK/1.2.135.0/Include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 SmartCity.Client/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SmartCity.Core">
+				<Option output="D:/Development/Projects/SmartCity/cmake-build-debug/bin/SmartCity.Core.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/SmartCity/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_SmartCity_Core"/>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/spdlog/include"/>
+					<Add directory="D:/Development/Projects/SmartCity/src"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/glfw/include"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/glm"/>
+					<Add directory="D:/Development/VulkanSDK/1.2.135.0/Include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 SmartCity.Core"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SmartCity.Core/fast">
+				<Option output="D:/Development/Projects/SmartCity/cmake-build-debug/bin/SmartCity.Core.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/SmartCity/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_SmartCity_Core"/>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/spdlog/include"/>
+					<Add directory="D:/Development/Projects/SmartCity/src"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/glfw/include"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/glm"/>
+					<Add directory="D:/Development/VulkanSDK/1.2.135.0/Include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 SmartCity.Core/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="D:/Development/Projects/SmartCity/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 install/local"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="D:/Development/Projects/SmartCity/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 install"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Development/Projects/SmartCity/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Development/Projects/SmartCity/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="D:/Development/Projects/SmartCity/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 list_install_components"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="uninstall">
+				<Option working_dir="D:/Development/Projects/SmartCity/cmake-build-debug/submodules/glfw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\glfw\Makefile VERBOSE=1 uninstall"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\glfw\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\glfw\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\glfw\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw">
+				<Option output="D:/Development/Projects/SmartCity/cmake-build-debug/submodules/glfw/src/glfw3.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/SmartCity/cmake-build-debug/submodules/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_GLFW_WIN32"/>
+					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/glfw/include"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/glfw/src"/>
+					<Add directory="D:/Development/Projects/SmartCity/cmake-build-debug/submodules/glfw/src"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\glfw\src\Makefile VERBOSE=1 glfw"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\glfw\src\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\glfw\src\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\glfw\src\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw/fast">
+				<Option output="D:/Development/Projects/SmartCity/cmake-build-debug/submodules/glfw/src/glfw3.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/SmartCity/cmake-build-debug/submodules/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_GLFW_WIN32"/>
+					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/glfw/include"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/glfw/src"/>
+					<Add directory="D:/Development/Projects/SmartCity/cmake-build-debug/submodules/glfw/src"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\glfw\src\Makefile VERBOSE=1 glfw/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\glfw\src\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\glfw\src\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\glfw\src\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="update_mappings">
+				<Option working_dir="D:/Development/Projects/SmartCity/cmake-build-debug/submodules/glfw/src"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\glfw\src\Makefile VERBOSE=1 update_mappings"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\glfw\src\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\glfw\src\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\glfw\src\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spdlog">
+				<Option output="D:/Development/Projects/SmartCity/cmake-build-debug/submodules/spdlog/spdlogd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/SmartCity/cmake-build-debug/submodules/spdlog"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/spdlog/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\spdlog\Makefile VERBOSE=1 spdlog"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\spdlog\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\spdlog\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\spdlog\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spdlog/fast">
+				<Option output="D:/Development/Projects/SmartCity/cmake-build-debug/submodules/spdlog/spdlogd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/SmartCity/cmake-build-debug/submodules/spdlog"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DSPDLOG_COMPILED_LIB"/>
+					<Add directory="D:/Development/Projects/SmartCity/submodules/spdlog/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\spdlog\Makefile VERBOSE=1 spdlog/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\spdlog\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\spdlog\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\SmartCity\cmake-build-debug\submodules\spdlog\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Client/EntryPoint.cpp">
+			<Option target="SmartCity.Client"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Debug/ValidationLayers.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Debug/ValidationLayers.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Devices/Ext.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Devices/Ext.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Devices/Instance.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Devices/Instance.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Devices/LogicalDevice.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Devices/LogicalDevice.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Devices/PhysicalDevice.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Devices/PhysicalDevice.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Devices/QueueFamilies.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Devices/QueueFamilies.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Devices/Surface.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Devices/Surface.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Engine/Engine.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Engine/Engine.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Engine/Log.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Engine/Log.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Engine/Module.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Filesystem/File.cpp">
+			<Option target="SmartCity.Client"/>
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Filesystem/File.h">
+			<Option target="SmartCity.Client"/>
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Buffers/Buffer.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Buffers/Buffer.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Buffers/UniformBuffer.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Buffers/UniformBuffer.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Commands/CommandBuffer.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Commands/CommandBuffer.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Commands/CommandPool.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Commands/CommandPool.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Graphics.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Graphics.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Pipelines/ComputePipeline.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Pipelines/ComputePipeline.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Pipelines/GraphicsPipeline.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Pipelines/GraphicsPipeline.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Pipelines/Shader.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Pipelines/Shader.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Renderer2d.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Renderer2d.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Renderpass/Framebuffer.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Renderpass/Framebuffer.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Renderpass/Renderpass.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Renderpass/Renderpass.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Renderpass/Swapchain.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Graphics/Renderpass/Swapchain.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Window.cpp">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/src/SmartCity.Core/Window.h">
+			<Option target="SmartCity.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/CMake/GenerateMappings.cmake">
+			<Option target="update_mappings"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/include/GLFW/glfw3.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/include/GLFW/glfw3native.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/egl_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/input.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/internal.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/mappings.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/mappings.h.in">
+			<Option target="update_mappings"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/null_init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/null_joystick.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/null_joystick.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/null_monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/null_platform.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/null_window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/osmesa_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/platform.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/platform.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/vulkan.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/wgl_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/win32_init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/win32_joystick.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/win32_joystick.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/win32_module.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/win32_monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/win32_platform.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/win32_thread.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/win32_thread.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/win32_time.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/win32_time.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/win32_window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/async.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/async_logger-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/async_logger.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/common-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/common.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/backtracer-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/backtracer.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/circular_q.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/console_globals.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/file_helper-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/file_helper.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/fmt_helper.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/log_msg-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/log_msg.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/log_msg_buffer-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/log_msg_buffer.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/mpmc_blocking_q.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/null_mutex.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/os-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/os.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/pattern_formatter-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/pattern_formatter.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/periodic_worker-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/periodic_worker.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/registry-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/registry.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/synchronous_factory.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/thread_pool-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/details/thread_pool.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/fmt/bin_to_hex.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/fmt/bundled/chrono.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/fmt/bundled/color.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/fmt/bundled/compile.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/fmt/bundled/core.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/fmt/bundled/format-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/fmt/bundled/format.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/fmt/bundled/locale.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/fmt/bundled/ostream.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/fmt/bundled/posix.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/fmt/bundled/printf.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/fmt/bundled/ranges.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/fmt/fmt.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/fmt/ostr.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/formatter.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/logger-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/logger.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/android_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/ansicolor_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/ansicolor_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/base_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/base_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/basic_file_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/basic_file_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/daily_file_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/dist_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/dup_filter_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/msvc_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/null_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/ostream_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/ringbuffer_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/rotating_file_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/rotating_file_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/stdout_color_sinks-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/stdout_color_sinks.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/stdout_sinks-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/stdout_sinks.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/syslog_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/systemd_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/wincolor_sink-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/sinks/wincolor_sink.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/spdlog-inl.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/spdlog.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/tweakme.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/include/spdlog/version.h">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/src/async.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/src/color_sinks.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/src/file_sinks.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/src/fmt.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/src/spdlog.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/src/stdout_sinks.cpp">
+			<Option target="spdlog"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\submodules\glfw\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/CMake/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\submodules\glfw\CMake\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/CMake/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\submodules\glfw\CMake\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/CMake/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\submodules\glfw\CMake\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\submodules\glfw\src\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\submodules\spdlog\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/cmake/ide.cmake">
+			<Option virtualFolder="CMake Files\submodules\spdlog\cmake\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/spdlog/cmake/utils.cmake">
+			<Option virtualFolder="CMake Files\submodules\spdlog\cmake\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\submodules\glm\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/submodules/glm/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\submodules\glm\glm\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/cmake/Ide.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/SmartCity/cmake/Utils.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

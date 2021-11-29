@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="glm"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\submodules\;CMake Files\submodules\glfw\;CMake Files\submodules\glfw\CMake\;CMake Files\submodules\glfw\src\;CMake Files\submodules\spdlog\;CMake Files\submodules\spdlog\cmake\;CMake Files\submodules\glm\;CMake Files\submodules\glm\glm\;CMake Files\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Development/Projects/Magma/cmake-build-debug/submodules/glm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\submodules\glm\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\submodules\glm\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\submodules\glm\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\submodules\glm\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Development/Projects/Magma/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\submodules\glfw\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/glfw/CMake/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\submodules\glfw\CMake\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/glfw/CMake/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\submodules\glfw\CMake\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/glfw/CMake/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\submodules\glfw\CMake\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\submodules\glfw\src\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/spdlog/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\submodules\spdlog\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/spdlog/cmake/ide.cmake">
+			<Option virtualFolder="CMake Files\submodules\spdlog\cmake\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/spdlog/cmake/utils.cmake">
+			<Option virtualFolder="CMake Files\submodules\spdlog\cmake\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\submodules\glm\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/glm/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\submodules\glm\glm\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake/Ide.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake/Utils.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

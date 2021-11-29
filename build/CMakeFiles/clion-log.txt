@@ -1,0 +1,6 @@
+"D:\Development\Software\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" D:\Development\Projects\SmartCity
+-- Build SmartCity: 0.0.1
+-- Including Win32 support
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Development/Projects/SmartCity/build

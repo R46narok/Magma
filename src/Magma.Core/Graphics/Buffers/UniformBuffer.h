@@ -1,0 +1,8 @@
+//
+// Created by Acer on 23.11.2021 г..
+//
+
+#ifndef SMARTCITY_UNIFORMBUFFER_H
+#define SMARTCITY_UNIFORMBUFFER_H
+
+#endif //SMARTCITY_UNIFORMBUFFER_H

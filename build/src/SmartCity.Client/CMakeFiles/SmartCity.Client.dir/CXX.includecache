@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/SmartCity.Domain/Core.h
+
+../include/SmartCity.Domain/Types.h
+memory
+-
+functional
+-
+
+../include/SmartCity.Graphics/Definitions.h
+
+../include/SmartCity.Graphics/Window.h
+SmartCity.Domain/Core.h
+../include/SmartCity.Graphics/SmartCity.Domain/Core.h
+SmartCity.Domain/Types.h
+../include/SmartCity.Graphics/SmartCity.Domain/Types.h
+SmartCity.Graphics/Definitions.h
+../include/SmartCity.Graphics/SmartCity.Graphics/Definitions.h
+string
+-
+functional
+-
+
+D:/Development/Projects/SmartCity/src/SmartCity.Client/EntryPoint.cpp
+iostream
+-
+SmartCity.Graphics/Window.h
+D:/Development/Projects/SmartCity/src/SmartCity.Client/SmartCity.Graphics/Window.h
+
