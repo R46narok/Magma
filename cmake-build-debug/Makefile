@@ -634,6 +634,33 @@ src\Magma.Core\Graphics\Commands\CommandPool.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Magma.Core.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Commands\CommandPool.cpp.s
 .PHONY : src\Magma.Core\Graphics\Commands\CommandPool.cpp.s
 
+src\Magma.Core\Graphics\Descriptors\DescriptorSet.obj: src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.obj
+
+.PHONY : src\Magma.Core\Graphics\Descriptors\DescriptorSet.obj
+
+# target to build an object file
+src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Magma.Core.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.obj
+.PHONY : src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.obj
+
+src\Magma.Core\Graphics\Descriptors\DescriptorSet.i: src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.i
+
+.PHONY : src\Magma.Core\Graphics\Descriptors\DescriptorSet.i
+
+# target to preprocess a source file
+src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Magma.Core.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.i
+.PHONY : src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.i
+
+src\Magma.Core\Graphics\Descriptors\DescriptorSet.s: src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.s
+
+.PHONY : src\Magma.Core\Graphics\Descriptors\DescriptorSet.s
+
+# target to generate assembly for a file
+src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Magma.Core.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.s
+.PHONY : src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.s
+
 src\Magma.Core\Graphics\Graphics.obj: src\Magma.Core\Graphics\Graphics.cpp.obj
 
 .PHONY : src\Magma.Core\Graphics\Graphics.obj
@@ -939,6 +966,9 @@ help:
 	@echo ... src/Magma.Core/Graphics/Commands/CommandPool.obj
 	@echo ... src/Magma.Core/Graphics/Commands/CommandPool.i
 	@echo ... src/Magma.Core/Graphics/Commands/CommandPool.s
+	@echo ... src/Magma.Core/Graphics/Descriptors/DescriptorSet.obj
+	@echo ... src/Magma.Core/Graphics/Descriptors/DescriptorSet.i
+	@echo ... src/Magma.Core/Graphics/Descriptors/DescriptorSet.s
 	@echo ... src/Magma.Core/Graphics/Graphics.obj
 	@echo ... src/Magma.Core/Graphics/Graphics.i
 	@echo ... src/Magma.Core/Graphics/Graphics.s

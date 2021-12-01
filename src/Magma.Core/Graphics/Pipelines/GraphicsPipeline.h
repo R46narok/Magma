@@ -7,7 +7,9 @@
 
 #include "Magma.Core/Base.h"
 #include "Magma.Core/Types.h"
+#include "Magma.Core/Graphics/Renderpass/Renderpass.h"
 #include "Magma.Core/Graphics/Pipelines/Shader.h"
+#include "Magma.Core/Graphics/Descriptors/DescriptorSet.h"
 
 #include <filesystem>
 #include <vulkan/vulkan.h>
@@ -17,14 +19,19 @@ namespace Magma
     class _Magma_Dll GraphicsPipeline
     {
     public:
-        explicit GraphicsPipeline(const std::vector<std::filesystem::path>& shaderPaths, VkDescriptorSetLayout descriptorSetLayout);
+        explicit GraphicsPipeline(const std::vector<std::filesystem::path>& shaderPaths, const Ref<Renderpass>& renderpass,
+                                  VkVertexInputBindingDescription bindingDescription, std::array<VkVertexInputAttributeDescription, 2> attributeDescriptions, const DescriptorSetLayout& layout);
         ~GraphicsPipeline();
 
-        const VkPipeline& GetPipeline() const noexcept { return _Pipeline; }
-        const VkPipelineLayout& GetPipelineLayout() const noexcept { return _Layout; }
+        void AllocateDescriptorSets(DescriptorSet* pSets, const Ref<DescriptorSetLayout>& layout, uint32_t count = 0);
+
+        [[nodiscard]] const VkPipeline& GetPipeline() const noexcept { return _Pipeline; }
+        [[nodiscard]] const VkPipelineLayout& GetPipelineLayout() const noexcept { return _Layout; }
     private:
         VkPipelineLayout _Layout;
         VkPipeline _Pipeline;
+
+        VkDescriptorPool _DescriptorPool;
     };
 }
 

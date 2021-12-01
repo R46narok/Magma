@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Buffers/UniformBuffer.cpp.obj"
   "CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Commands/CommandBuffer.cpp.obj"
   "CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Commands/CommandPool.cpp.obj"
+  "CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Descriptors/DescriptorSet.cpp.obj"
   "CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Graphics.cpp.obj"
   "CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Pipelines/ComputePipeline.cpp.obj"
   "CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Pipelines/GraphicsPipeline.cpp.obj"

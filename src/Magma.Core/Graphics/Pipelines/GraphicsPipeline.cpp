@@ -10,15 +10,12 @@
 
 namespace Magma
 {
-    GraphicsPipeline::GraphicsPipeline(const std::vector<std::filesystem::path>& shaderPaths, VkDescriptorSetLayout descriptorSetLayout)
+    GraphicsPipeline::GraphicsPipeline(const std::vector<std::filesystem::path>& shaderPaths, const Ref<Renderpass>& renderpass,
+                                       VkVertexInputBindingDescription bindingDescription, std::array<VkVertexInputAttributeDescription, 2> attributeDescriptions, const DescriptorSetLayout& layout)
         : _Layout(VK_NULL_HANDLE), _Pipeline(VK_NULL_HANDLE)
     {
         auto device = Graphics::GetDevice()->GetVulkanDevice();
-        auto renderpass = Graphics::GetRenderpass()->GetVulkanRenderpass();
         auto swapchain = Graphics::GetSwapchain();
-
-        auto bindingDescription = Vertex::GetBinding();
-        auto attributeDescriptions = Vertex::GetAttributes();
 
         VkPipelineVertexInputStateCreateInfo vertexInputInfo{
           .sType = VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO,
@@ -110,9 +107,8 @@ namespace Magma
         VkPipelineLayoutCreateInfo layoutInfo{
             .sType = VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO,
             .setLayoutCount = 1,
-            .pSetLayouts = &descriptorSetLayout
+            .pSetLayouts = &layout.GetVulkanLayout()
         };
-
 
         auto result = vkCreatePipelineLayout(device, &layoutInfo, nullptr, &_Layout);
         _Magma_VkAssert(result, _Magma_Core_Error("Could not create pipeline layout"));
@@ -136,12 +132,28 @@ namespace Magma
         pipelineInfo.pColorBlendState = &colorBlendingInfo;
         pipelineInfo.pDynamicState = nullptr;
         pipelineInfo.layout = _Layout;
-        pipelineInfo.renderPass = renderpass;
+        pipelineInfo.renderPass = renderpass->GetVulkanRenderpass();
         pipelineInfo.subpass = 0;
 
         result = vkCreateGraphicsPipelines(device, VK_NULL_HANDLE, 1, &pipelineInfo, nullptr, &_Pipeline);
         _Magma_VkAssert(result, _Magma_Core_Error("Could not create graphics pipeline"));
         _Magma_Core_Info("Created graphics pipeline");
+
+        auto imageCount = swapchain->GetImageCount();
+
+        VkDescriptorPoolSize poolSize{
+                .type = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER,
+                .descriptorCount = imageCount
+        };
+
+        VkDescriptorPoolCreateInfo descriptorPoolCreateInfo{
+                .sType = VK_STRUCTURE_TYPE_DESCRIPTOR_POOL_CREATE_INFO,
+                .maxSets = imageCount,
+                .poolSizeCount = 1,
+                .pPoolSizes = &poolSize,
+        };
+
+        Graphics::CheckVk(vkCreateDescriptorPool(device, &descriptorPoolCreateInfo, nullptr, &_DescriptorPool));
     }
 
     GraphicsPipeline::~GraphicsPipeline()
@@ -149,6 +161,24 @@ namespace Magma
         auto device = Graphics::GetDevice()->GetVulkanDevice();
         vkDestroyPipeline(device, _Pipeline, nullptr);
         vkDestroyPipelineLayout(device, _Layout, nullptr);
+    }
+
+    void GraphicsPipeline::AllocateDescriptorSets(DescriptorSet* pSets, const Ref<DescriptorSetLayout>& layout, uint32_t count)
+    {
+        if (count == 0)
+            count = Graphics::GetSwapchain()->GetImageCount();
+
+        std::vector<VkDescriptorSetLayout> layouts(count, layout->GetVulkanLayout());
+
+        VkDescriptorSetAllocateInfo allocInfo{
+                .sType = VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO,
+                .descriptorPool = _DescriptorPool,
+                .descriptorSetCount = count,
+                .pSetLayouts = layouts.data()
+        };
+
+        auto device = Graphics::GetDevice()->GetVulkanDevice();
+        Graphics::CheckVk(vkAllocateDescriptorSets(device, &allocInfo, (VkDescriptorSet*)pSets));
     }
 
 }

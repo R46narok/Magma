@@ -90,8 +90,177 @@ CMakeFiles/Magma.Core.dir/src/Magma.Core/Devices/Instance.cpp.obj
  ../src/Magma.Core/Debug/ValidationLayers.h
  ../src/Magma.Core/Devices/Ext.h
  ../src/Magma.Core/Devices/Instance.h
+ ../src/Magma.Core/Devices/LogicalDevice.h
+ ../src/Magma.Core/Devices/PhysicalDevice.h
+ ../src/Magma.Core/Devices/QueueFamilies.h
+ ../src/Magma.Core/Devices/Surface.h
  ../src/Magma.Core/Engine/Log.h
+ ../src/Magma.Core/Engine/Module.h
+ ../src/Magma.Core/Graphics/Buffers/Buffer.h
+ ../src/Magma.Core/Graphics/Buffers/UniformBuffer.h
+ ../src/Magma.Core/Graphics/Commands/CommandBuffer.h
+ ../src/Magma.Core/Graphics/Commands/CommandPool.h
+ ../src/Magma.Core/Graphics/Descriptors/DescriptorSet.h
+ ../src/Magma.Core/Graphics/Graphics.h
+ ../src/Magma.Core/Graphics/Pipelines/GraphicsPipeline.h
+ ../src/Magma.Core/Graphics/Pipelines/Shader.h
+ ../src/Magma.Core/Graphics/Renderer2D.h
+ ../src/Magma.Core/Graphics/Renderpass/Framebuffer.h
+ ../src/Magma.Core/Graphics/Renderpass/Renderpass.h
+ ../src/Magma.Core/Graphics/Renderpass/Swapchain.h
  ../src/Magma.Core/Types.h
+ ../src/Magma.Core/Window.h
+ ../submodules/glm/glm/common.hpp
+ ../submodules/glm/glm/detail/_fixes.hpp
+ ../submodules/glm/glm/detail/_swizzle.hpp
+ ../submodules/glm/glm/detail/_swizzle_func.hpp
+ ../submodules/glm/glm/detail/_vectorize.hpp
+ ../submodules/glm/glm/detail/compute_common.hpp
+ ../submodules/glm/glm/detail/compute_vector_relational.hpp
+ ../submodules/glm/glm/detail/func_common.inl
+ ../submodules/glm/glm/detail/func_common_simd.inl
+ ../submodules/glm/glm/detail/func_exponential.inl
+ ../submodules/glm/glm/detail/func_exponential_simd.inl
+ ../submodules/glm/glm/detail/func_geometric.inl
+ ../submodules/glm/glm/detail/func_geometric_simd.inl
+ ../submodules/glm/glm/detail/func_integer.inl
+ ../submodules/glm/glm/detail/func_integer_simd.inl
+ ../submodules/glm/glm/detail/func_matrix.inl
+ ../submodules/glm/glm/detail/func_matrix_simd.inl
+ ../submodules/glm/glm/detail/func_packing.inl
+ ../submodules/glm/glm/detail/func_packing_simd.inl
+ ../submodules/glm/glm/detail/func_trigonometric.inl
+ ../submodules/glm/glm/detail/func_trigonometric_simd.inl
+ ../submodules/glm/glm/detail/func_vector_relational.inl
+ ../submodules/glm/glm/detail/func_vector_relational_simd.inl
+ ../submodules/glm/glm/detail/qualifier.hpp
+ ../submodules/glm/glm/detail/setup.hpp
+ ../submodules/glm/glm/detail/type_half.hpp
+ ../submodules/glm/glm/detail/type_half.inl
+ ../submodules/glm/glm/detail/type_mat2x2.hpp
+ ../submodules/glm/glm/detail/type_mat2x2.inl
+ ../submodules/glm/glm/detail/type_mat2x3.hpp
+ ../submodules/glm/glm/detail/type_mat2x3.inl
+ ../submodules/glm/glm/detail/type_mat2x4.hpp
+ ../submodules/glm/glm/detail/type_mat2x4.inl
+ ../submodules/glm/glm/detail/type_mat3x2.hpp
+ ../submodules/glm/glm/detail/type_mat3x2.inl
+ ../submodules/glm/glm/detail/type_mat3x3.hpp
+ ../submodules/glm/glm/detail/type_mat3x3.inl
+ ../submodules/glm/glm/detail/type_mat3x4.hpp
+ ../submodules/glm/glm/detail/type_mat3x4.inl
+ ../submodules/glm/glm/detail/type_mat4x2.hpp
+ ../submodules/glm/glm/detail/type_mat4x2.inl
+ ../submodules/glm/glm/detail/type_mat4x3.hpp
+ ../submodules/glm/glm/detail/type_mat4x3.inl
+ ../submodules/glm/glm/detail/type_mat4x4.hpp
+ ../submodules/glm/glm/detail/type_mat4x4.inl
+ ../submodules/glm/glm/detail/type_mat4x4_simd.inl
+ ../submodules/glm/glm/detail/type_vec1.hpp
+ ../submodules/glm/glm/detail/type_vec1.inl
+ ../submodules/glm/glm/detail/type_vec2.hpp
+ ../submodules/glm/glm/detail/type_vec2.inl
+ ../submodules/glm/glm/detail/type_vec3.hpp
+ ../submodules/glm/glm/detail/type_vec3.inl
+ ../submodules/glm/glm/detail/type_vec4.hpp
+ ../submodules/glm/glm/detail/type_vec4.inl
+ ../submodules/glm/glm/detail/type_vec4_simd.inl
+ ../submodules/glm/glm/exponential.hpp
+ ../submodules/glm/glm/ext/matrix_double2x2.hpp
+ ../submodules/glm/glm/ext/matrix_double2x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double2x3.hpp
+ ../submodules/glm/glm/ext/matrix_double2x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double2x4.hpp
+ ../submodules/glm/glm/ext/matrix_double2x4_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double3x2.hpp
+ ../submodules/glm/glm/ext/matrix_double3x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double3x3.hpp
+ ../submodules/glm/glm/ext/matrix_double3x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double3x4.hpp
+ ../submodules/glm/glm/ext/matrix_double3x4_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double4x2.hpp
+ ../submodules/glm/glm/ext/matrix_double4x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double4x3.hpp
+ ../submodules/glm/glm/ext/matrix_double4x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double4x4.hpp
+ ../submodules/glm/glm/ext/matrix_double4x4_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float2x2.hpp
+ ../submodules/glm/glm/ext/matrix_float2x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float2x3.hpp
+ ../submodules/glm/glm/ext/matrix_float2x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float2x4.hpp
+ ../submodules/glm/glm/ext/matrix_float2x4_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float3x2.hpp
+ ../submodules/glm/glm/ext/matrix_float3x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float3x3.hpp
+ ../submodules/glm/glm/ext/matrix_float3x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float3x4.hpp
+ ../submodules/glm/glm/ext/matrix_float3x4_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float4x2.hpp
+ ../submodules/glm/glm/ext/matrix_float4x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float4x3.hpp
+ ../submodules/glm/glm/ext/matrix_float4x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float4x4.hpp
+ ../submodules/glm/glm/ext/matrix_float4x4_precision.hpp
+ ../submodules/glm/glm/ext/scalar_int_sized.hpp
+ ../submodules/glm/glm/ext/scalar_uint_sized.hpp
+ ../submodules/glm/glm/ext/vector_bool2.hpp
+ ../submodules/glm/glm/ext/vector_bool2_precision.hpp
+ ../submodules/glm/glm/ext/vector_bool3.hpp
+ ../submodules/glm/glm/ext/vector_bool3_precision.hpp
+ ../submodules/glm/glm/ext/vector_bool4.hpp
+ ../submodules/glm/glm/ext/vector_bool4_precision.hpp
+ ../submodules/glm/glm/ext/vector_double2.hpp
+ ../submodules/glm/glm/ext/vector_double2_precision.hpp
+ ../submodules/glm/glm/ext/vector_double3.hpp
+ ../submodules/glm/glm/ext/vector_double3_precision.hpp
+ ../submodules/glm/glm/ext/vector_double4.hpp
+ ../submodules/glm/glm/ext/vector_double4_precision.hpp
+ ../submodules/glm/glm/ext/vector_float2.hpp
+ ../submodules/glm/glm/ext/vector_float2_precision.hpp
+ ../submodules/glm/glm/ext/vector_float3.hpp
+ ../submodules/glm/glm/ext/vector_float3_precision.hpp
+ ../submodules/glm/glm/ext/vector_float4.hpp
+ ../submodules/glm/glm/ext/vector_float4_precision.hpp
+ ../submodules/glm/glm/ext/vector_int2.hpp
+ ../submodules/glm/glm/ext/vector_int2_sized.hpp
+ ../submodules/glm/glm/ext/vector_int3.hpp
+ ../submodules/glm/glm/ext/vector_int3_sized.hpp
+ ../submodules/glm/glm/ext/vector_int4.hpp
+ ../submodules/glm/glm/ext/vector_int4_sized.hpp
+ ../submodules/glm/glm/ext/vector_uint2.hpp
+ ../submodules/glm/glm/ext/vector_uint2_sized.hpp
+ ../submodules/glm/glm/ext/vector_uint3.hpp
+ ../submodules/glm/glm/ext/vector_uint3_sized.hpp
+ ../submodules/glm/glm/ext/vector_uint4.hpp
+ ../submodules/glm/glm/ext/vector_uint4_sized.hpp
+ ../submodules/glm/glm/fwd.hpp
+ ../submodules/glm/glm/geometric.hpp
+ ../submodules/glm/glm/glm.hpp
+ ../submodules/glm/glm/integer.hpp
+ ../submodules/glm/glm/mat2x2.hpp
+ ../submodules/glm/glm/mat2x3.hpp
+ ../submodules/glm/glm/mat2x4.hpp
+ ../submodules/glm/glm/mat3x2.hpp
+ ../submodules/glm/glm/mat3x3.hpp
+ ../submodules/glm/glm/mat3x4.hpp
+ ../submodules/glm/glm/mat4x2.hpp
+ ../submodules/glm/glm/mat4x3.hpp
+ ../submodules/glm/glm/mat4x4.hpp
+ ../submodules/glm/glm/matrix.hpp
+ ../submodules/glm/glm/packing.hpp
+ ../submodules/glm/glm/simd/common.h
+ ../submodules/glm/glm/simd/exponential.h
+ ../submodules/glm/glm/simd/geometric.h
+ ../submodules/glm/glm/simd/integer.h
+ ../submodules/glm/glm/simd/matrix.h
+ ../submodules/glm/glm/simd/neon.h
+ ../submodules/glm/glm/simd/platform.h
+ ../submodules/glm/glm/trigonometric.hpp
+ ../submodules/glm/glm/vec2.hpp
+ ../submodules/glm/glm/vec3.hpp
+ ../submodules/glm/glm/vec4.hpp
+ ../submodules/glm/glm/vector_relational.hpp
  ../submodules/spdlog/include/spdlog/common-inl.h
  ../submodules/spdlog/include/spdlog/common.h
  ../submodules/spdlog/include/spdlog/details/backtracer-inl.h
@@ -158,11 +327,14 @@ CMakeFiles/Magma.Core.dir/src/Magma.Core/Devices/LogicalDevice.cpp.obj
  ../src/Magma.Core/Engine/Log.h
  ../src/Magma.Core/Engine/Module.h
  ../src/Magma.Core/Graphics/Buffers/Buffer.h
+ ../src/Magma.Core/Graphics/Buffers/UniformBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandPool.h
+ ../src/Magma.Core/Graphics/Descriptors/DescriptorSet.h
  ../src/Magma.Core/Graphics/Graphics.h
  ../src/Magma.Core/Graphics/Pipelines/GraphicsPipeline.h
  ../src/Magma.Core/Graphics/Pipelines/Shader.h
+ ../src/Magma.Core/Graphics/Renderer2D.h
  ../src/Magma.Core/Graphics/Renderpass/Framebuffer.h
  ../src/Magma.Core/Graphics/Renderpass/Renderpass.h
  ../src/Magma.Core/Graphics/Renderpass/Swapchain.h
@@ -384,11 +556,14 @@ CMakeFiles/Magma.Core.dir/src/Magma.Core/Devices/PhysicalDevice.cpp.obj
  ../src/Magma.Core/Engine/Log.h
  ../src/Magma.Core/Engine/Module.h
  ../src/Magma.Core/Graphics/Buffers/Buffer.h
+ ../src/Magma.Core/Graphics/Buffers/UniformBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandPool.h
+ ../src/Magma.Core/Graphics/Descriptors/DescriptorSet.h
  ../src/Magma.Core/Graphics/Graphics.h
  ../src/Magma.Core/Graphics/Pipelines/GraphicsPipeline.h
  ../src/Magma.Core/Graphics/Pipelines/Shader.h
+ ../src/Magma.Core/Graphics/Renderer2D.h
  ../src/Magma.Core/Graphics/Renderpass/Framebuffer.h
  ../src/Magma.Core/Graphics/Renderpass/Renderpass.h
  ../src/Magma.Core/Graphics/Renderpass/Swapchain.h
@@ -631,11 +806,14 @@ CMakeFiles/Magma.Core.dir/src/Magma.Core/Devices/Surface.cpp.obj
  ../src/Magma.Core/Engine/Log.h
  ../src/Magma.Core/Engine/Module.h
  ../src/Magma.Core/Graphics/Buffers/Buffer.h
+ ../src/Magma.Core/Graphics/Buffers/UniformBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandPool.h
+ ../src/Magma.Core/Graphics/Descriptors/DescriptorSet.h
  ../src/Magma.Core/Graphics/Graphics.h
  ../src/Magma.Core/Graphics/Pipelines/GraphicsPipeline.h
  ../src/Magma.Core/Graphics/Pipelines/Shader.h
+ ../src/Magma.Core/Graphics/Renderer2D.h
  ../src/Magma.Core/Graphics/Renderpass/Framebuffer.h
  ../src/Magma.Core/Graphics/Renderpass/Renderpass.h
  ../src/Magma.Core/Graphics/Renderpass/Swapchain.h
@@ -963,11 +1141,14 @@ CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Buffers/Buffer.cpp.obj
  ../src/Magma.Core/Engine/Log.h
  ../src/Magma.Core/Engine/Module.h
  ../src/Magma.Core/Graphics/Buffers/Buffer.h
+ ../src/Magma.Core/Graphics/Buffers/UniformBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandPool.h
+ ../src/Magma.Core/Graphics/Descriptors/DescriptorSet.h
  ../src/Magma.Core/Graphics/Graphics.h
  ../src/Magma.Core/Graphics/Pipelines/GraphicsPipeline.h
  ../src/Magma.Core/Graphics/Pipelines/Shader.h
+ ../src/Magma.Core/Graphics/Renderer2D.h
  ../src/Magma.Core/Graphics/Renderpass/Framebuffer.h
  ../src/Magma.Core/Graphics/Renderpass/Renderpass.h
  ../src/Magma.Core/Graphics/Renderpass/Swapchain.h
@@ -1180,8 +1361,35 @@ CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Buffers/Buffer.cpp.obj
  D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_xlib.h
  D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_xlib_xrandr.h
 CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Buffers/UniformBuffer.cpp.obj
+ ../src/Magma.Core/Base.h
+ ../src/Magma.Core/Devices/Instance.h
+ ../src/Magma.Core/Devices/LogicalDevice.h
+ ../src/Magma.Core/Devices/PhysicalDevice.h
+ ../src/Magma.Core/Devices/QueueFamilies.h
+ ../src/Magma.Core/Devices/Surface.h
+ ../src/Magma.Core/Engine/Module.h
+ ../src/Magma.Core/Graphics/Buffers/Buffer.h
+ ../src/Magma.Core/Graphics/Commands/CommandPool.h
+ ../src/Magma.Core/Types.h
+ ../src/Magma.Core/Window.h
  D:/Development/Projects/Magma/src/Magma.Core/Graphics/Buffers/UniformBuffer.cpp
  D:/Development/Projects/Magma/src/Magma.Core/Graphics/Buffers/UniformBuffer.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vk_platform.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_android.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_beta.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_core.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_fuchsia.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_ggp.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_ios.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_macos.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_metal.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_vi.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_wayland.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_win32.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_xcb.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_xlib.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_xlib_xrandr.h
 CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Commands/CommandBuffer.cpp.obj
  ../src/Magma.Core/Base.h
  ../src/Magma.Core/Devices/Instance.h
@@ -1192,11 +1400,14 @@ CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Commands/CommandBuffer.cpp.obj
  ../src/Magma.Core/Engine/Log.h
  ../src/Magma.Core/Engine/Module.h
  ../src/Magma.Core/Graphics/Buffers/Buffer.h
+ ../src/Magma.Core/Graphics/Buffers/UniformBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandPool.h
+ ../src/Magma.Core/Graphics/Descriptors/DescriptorSet.h
  ../src/Magma.Core/Graphics/Graphics.h
  ../src/Magma.Core/Graphics/Pipelines/GraphicsPipeline.h
  ../src/Magma.Core/Graphics/Pipelines/Shader.h
+ ../src/Magma.Core/Graphics/Renderer2D.h
  ../src/Magma.Core/Graphics/Renderpass/Framebuffer.h
  ../src/Magma.Core/Graphics/Renderpass/Renderpass.h
  ../src/Magma.Core/Graphics/Renderpass/Swapchain.h
@@ -1418,11 +1629,14 @@ CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Commands/CommandPool.cpp.obj
  ../src/Magma.Core/Engine/Log.h
  ../src/Magma.Core/Engine/Module.h
  ../src/Magma.Core/Graphics/Buffers/Buffer.h
+ ../src/Magma.Core/Graphics/Buffers/UniformBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandPool.h
+ ../src/Magma.Core/Graphics/Descriptors/DescriptorSet.h
  ../src/Magma.Core/Graphics/Graphics.h
  ../src/Magma.Core/Graphics/Pipelines/GraphicsPipeline.h
  ../src/Magma.Core/Graphics/Pipelines/Shader.h
+ ../src/Magma.Core/Graphics/Renderer2D.h
  ../src/Magma.Core/Graphics/Renderpass/Framebuffer.h
  ../src/Magma.Core/Graphics/Renderpass/Renderpass.h
  ../src/Magma.Core/Graphics/Renderpass/Swapchain.h
@@ -1634,6 +1848,196 @@ CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Commands/CommandPool.cpp.obj
  D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_xcb.h
  D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_xlib.h
  D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_xlib_xrandr.h
+CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Descriptors/DescriptorSet.cpp.obj
+ ../src/Magma.Core/Base.h
+ ../src/Magma.Core/Devices/Instance.h
+ ../src/Magma.Core/Devices/LogicalDevice.h
+ ../src/Magma.Core/Devices/PhysicalDevice.h
+ ../src/Magma.Core/Devices/QueueFamilies.h
+ ../src/Magma.Core/Devices/Surface.h
+ ../src/Magma.Core/Engine/Module.h
+ ../src/Magma.Core/Graphics/Buffers/Buffer.h
+ ../src/Magma.Core/Graphics/Buffers/UniformBuffer.h
+ ../src/Magma.Core/Graphics/Commands/CommandBuffer.h
+ ../src/Magma.Core/Graphics/Commands/CommandPool.h
+ ../src/Magma.Core/Graphics/Descriptors/DescriptorSet.h
+ ../src/Magma.Core/Graphics/Graphics.h
+ ../src/Magma.Core/Graphics/Pipelines/GraphicsPipeline.h
+ ../src/Magma.Core/Graphics/Pipelines/Shader.h
+ ../src/Magma.Core/Graphics/Renderer2D.h
+ ../src/Magma.Core/Graphics/Renderpass/Framebuffer.h
+ ../src/Magma.Core/Graphics/Renderpass/Renderpass.h
+ ../src/Magma.Core/Graphics/Renderpass/Swapchain.h
+ ../src/Magma.Core/Types.h
+ ../src/Magma.Core/Window.h
+ ../submodules/glm/glm/common.hpp
+ ../submodules/glm/glm/detail/_fixes.hpp
+ ../submodules/glm/glm/detail/_swizzle.hpp
+ ../submodules/glm/glm/detail/_swizzle_func.hpp
+ ../submodules/glm/glm/detail/_vectorize.hpp
+ ../submodules/glm/glm/detail/compute_common.hpp
+ ../submodules/glm/glm/detail/compute_vector_relational.hpp
+ ../submodules/glm/glm/detail/func_common.inl
+ ../submodules/glm/glm/detail/func_common_simd.inl
+ ../submodules/glm/glm/detail/func_exponential.inl
+ ../submodules/glm/glm/detail/func_exponential_simd.inl
+ ../submodules/glm/glm/detail/func_geometric.inl
+ ../submodules/glm/glm/detail/func_geometric_simd.inl
+ ../submodules/glm/glm/detail/func_integer.inl
+ ../submodules/glm/glm/detail/func_integer_simd.inl
+ ../submodules/glm/glm/detail/func_matrix.inl
+ ../submodules/glm/glm/detail/func_matrix_simd.inl
+ ../submodules/glm/glm/detail/func_packing.inl
+ ../submodules/glm/glm/detail/func_packing_simd.inl
+ ../submodules/glm/glm/detail/func_trigonometric.inl
+ ../submodules/glm/glm/detail/func_trigonometric_simd.inl
+ ../submodules/glm/glm/detail/func_vector_relational.inl
+ ../submodules/glm/glm/detail/func_vector_relational_simd.inl
+ ../submodules/glm/glm/detail/qualifier.hpp
+ ../submodules/glm/glm/detail/setup.hpp
+ ../submodules/glm/glm/detail/type_half.hpp
+ ../submodules/glm/glm/detail/type_half.inl
+ ../submodules/glm/glm/detail/type_mat2x2.hpp
+ ../submodules/glm/glm/detail/type_mat2x2.inl
+ ../submodules/glm/glm/detail/type_mat2x3.hpp
+ ../submodules/glm/glm/detail/type_mat2x3.inl
+ ../submodules/glm/glm/detail/type_mat2x4.hpp
+ ../submodules/glm/glm/detail/type_mat2x4.inl
+ ../submodules/glm/glm/detail/type_mat3x2.hpp
+ ../submodules/glm/glm/detail/type_mat3x2.inl
+ ../submodules/glm/glm/detail/type_mat3x3.hpp
+ ../submodules/glm/glm/detail/type_mat3x3.inl
+ ../submodules/glm/glm/detail/type_mat3x4.hpp
+ ../submodules/glm/glm/detail/type_mat3x4.inl
+ ../submodules/glm/glm/detail/type_mat4x2.hpp
+ ../submodules/glm/glm/detail/type_mat4x2.inl
+ ../submodules/glm/glm/detail/type_mat4x3.hpp
+ ../submodules/glm/glm/detail/type_mat4x3.inl
+ ../submodules/glm/glm/detail/type_mat4x4.hpp
+ ../submodules/glm/glm/detail/type_mat4x4.inl
+ ../submodules/glm/glm/detail/type_mat4x4_simd.inl
+ ../submodules/glm/glm/detail/type_vec1.hpp
+ ../submodules/glm/glm/detail/type_vec1.inl
+ ../submodules/glm/glm/detail/type_vec2.hpp
+ ../submodules/glm/glm/detail/type_vec2.inl
+ ../submodules/glm/glm/detail/type_vec3.hpp
+ ../submodules/glm/glm/detail/type_vec3.inl
+ ../submodules/glm/glm/detail/type_vec4.hpp
+ ../submodules/glm/glm/detail/type_vec4.inl
+ ../submodules/glm/glm/detail/type_vec4_simd.inl
+ ../submodules/glm/glm/exponential.hpp
+ ../submodules/glm/glm/ext/matrix_double2x2.hpp
+ ../submodules/glm/glm/ext/matrix_double2x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double2x3.hpp
+ ../submodules/glm/glm/ext/matrix_double2x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double2x4.hpp
+ ../submodules/glm/glm/ext/matrix_double2x4_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double3x2.hpp
+ ../submodules/glm/glm/ext/matrix_double3x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double3x3.hpp
+ ../submodules/glm/glm/ext/matrix_double3x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double3x4.hpp
+ ../submodules/glm/glm/ext/matrix_double3x4_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double4x2.hpp
+ ../submodules/glm/glm/ext/matrix_double4x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double4x3.hpp
+ ../submodules/glm/glm/ext/matrix_double4x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double4x4.hpp
+ ../submodules/glm/glm/ext/matrix_double4x4_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float2x2.hpp
+ ../submodules/glm/glm/ext/matrix_float2x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float2x3.hpp
+ ../submodules/glm/glm/ext/matrix_float2x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float2x4.hpp
+ ../submodules/glm/glm/ext/matrix_float2x4_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float3x2.hpp
+ ../submodules/glm/glm/ext/matrix_float3x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float3x3.hpp
+ ../submodules/glm/glm/ext/matrix_float3x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float3x4.hpp
+ ../submodules/glm/glm/ext/matrix_float3x4_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float4x2.hpp
+ ../submodules/glm/glm/ext/matrix_float4x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float4x3.hpp
+ ../submodules/glm/glm/ext/matrix_float4x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float4x4.hpp
+ ../submodules/glm/glm/ext/matrix_float4x4_precision.hpp
+ ../submodules/glm/glm/ext/scalar_int_sized.hpp
+ ../submodules/glm/glm/ext/scalar_uint_sized.hpp
+ ../submodules/glm/glm/ext/vector_bool2.hpp
+ ../submodules/glm/glm/ext/vector_bool2_precision.hpp
+ ../submodules/glm/glm/ext/vector_bool3.hpp
+ ../submodules/glm/glm/ext/vector_bool3_precision.hpp
+ ../submodules/glm/glm/ext/vector_bool4.hpp
+ ../submodules/glm/glm/ext/vector_bool4_precision.hpp
+ ../submodules/glm/glm/ext/vector_double2.hpp
+ ../submodules/glm/glm/ext/vector_double2_precision.hpp
+ ../submodules/glm/glm/ext/vector_double3.hpp
+ ../submodules/glm/glm/ext/vector_double3_precision.hpp
+ ../submodules/glm/glm/ext/vector_double4.hpp
+ ../submodules/glm/glm/ext/vector_double4_precision.hpp
+ ../submodules/glm/glm/ext/vector_float2.hpp
+ ../submodules/glm/glm/ext/vector_float2_precision.hpp
+ ../submodules/glm/glm/ext/vector_float3.hpp
+ ../submodules/glm/glm/ext/vector_float3_precision.hpp
+ ../submodules/glm/glm/ext/vector_float4.hpp
+ ../submodules/glm/glm/ext/vector_float4_precision.hpp
+ ../submodules/glm/glm/ext/vector_int2.hpp
+ ../submodules/glm/glm/ext/vector_int2_sized.hpp
+ ../submodules/glm/glm/ext/vector_int3.hpp
+ ../submodules/glm/glm/ext/vector_int3_sized.hpp
+ ../submodules/glm/glm/ext/vector_int4.hpp
+ ../submodules/glm/glm/ext/vector_int4_sized.hpp
+ ../submodules/glm/glm/ext/vector_uint2.hpp
+ ../submodules/glm/glm/ext/vector_uint2_sized.hpp
+ ../submodules/glm/glm/ext/vector_uint3.hpp
+ ../submodules/glm/glm/ext/vector_uint3_sized.hpp
+ ../submodules/glm/glm/ext/vector_uint4.hpp
+ ../submodules/glm/glm/ext/vector_uint4_sized.hpp
+ ../submodules/glm/glm/fwd.hpp
+ ../submodules/glm/glm/geometric.hpp
+ ../submodules/glm/glm/glm.hpp
+ ../submodules/glm/glm/integer.hpp
+ ../submodules/glm/glm/mat2x2.hpp
+ ../submodules/glm/glm/mat2x3.hpp
+ ../submodules/glm/glm/mat2x4.hpp
+ ../submodules/glm/glm/mat3x2.hpp
+ ../submodules/glm/glm/mat3x3.hpp
+ ../submodules/glm/glm/mat3x4.hpp
+ ../submodules/glm/glm/mat4x2.hpp
+ ../submodules/glm/glm/mat4x3.hpp
+ ../submodules/glm/glm/mat4x4.hpp
+ ../submodules/glm/glm/matrix.hpp
+ ../submodules/glm/glm/packing.hpp
+ ../submodules/glm/glm/simd/common.h
+ ../submodules/glm/glm/simd/exponential.h
+ ../submodules/glm/glm/simd/geometric.h
+ ../submodules/glm/glm/simd/integer.h
+ ../submodules/glm/glm/simd/matrix.h
+ ../submodules/glm/glm/simd/neon.h
+ ../submodules/glm/glm/simd/platform.h
+ ../submodules/glm/glm/trigonometric.hpp
+ ../submodules/glm/glm/vec2.hpp
+ ../submodules/glm/glm/vec3.hpp
+ ../submodules/glm/glm/vec4.hpp
+ ../submodules/glm/glm/vector_relational.hpp
+ D:/Development/Projects/Magma/src/Magma.Core/Graphics/Descriptors/DescriptorSet.cpp
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vk_platform.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_android.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_beta.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_core.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_fuchsia.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_ggp.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_ios.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_macos.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_metal.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_vi.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_wayland.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_win32.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_xcb.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_xlib.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_xlib_xrandr.h
 CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Graphics.cpp.obj
  ../src/Magma.Core/Base.h
  ../src/Magma.Core/Devices/Instance.h
@@ -1644,11 +2048,14 @@ CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Graphics.cpp.obj
  ../src/Magma.Core/Engine/Log.h
  ../src/Magma.Core/Engine/Module.h
  ../src/Magma.Core/Graphics/Buffers/Buffer.h
+ ../src/Magma.Core/Graphics/Buffers/UniformBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandPool.h
+ ../src/Magma.Core/Graphics/Descriptors/DescriptorSet.h
  ../src/Magma.Core/Graphics/Graphics.h
  ../src/Magma.Core/Graphics/Pipelines/GraphicsPipeline.h
  ../src/Magma.Core/Graphics/Pipelines/Shader.h
+ ../src/Magma.Core/Graphics/Renderer2D.h
  ../src/Magma.Core/Graphics/Renderpass/Framebuffer.h
  ../src/Magma.Core/Graphics/Renderpass/Renderpass.h
  ../src/Magma.Core/Graphics/Renderpass/Swapchain.h
@@ -1884,11 +2291,14 @@ CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Pipelines/GraphicsPipeline.cpp
  ../src/Magma.Core/Engine/Log.h
  ../src/Magma.Core/Engine/Module.h
  ../src/Magma.Core/Graphics/Buffers/Buffer.h
+ ../src/Magma.Core/Graphics/Buffers/UniformBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandPool.h
+ ../src/Magma.Core/Graphics/Descriptors/DescriptorSet.h
  ../src/Magma.Core/Graphics/Graphics.h
  ../src/Magma.Core/Graphics/Pipelines/GraphicsPipeline.h
  ../src/Magma.Core/Graphics/Pipelines/Shader.h
+ ../src/Magma.Core/Graphics/Renderer2D.h
  ../src/Magma.Core/Graphics/Renderpass/Framebuffer.h
  ../src/Magma.Core/Graphics/Renderpass/Renderpass.h
  ../src/Magma.Core/Graphics/Renderpass/Swapchain.h
@@ -2111,11 +2521,14 @@ CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Pipelines/Shader.cpp.obj
  ../src/Magma.Core/Engine/Module.h
  ../src/Magma.Core/Filesystem/File.h
  ../src/Magma.Core/Graphics/Buffers/Buffer.h
+ ../src/Magma.Core/Graphics/Buffers/UniformBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandPool.h
+ ../src/Magma.Core/Graphics/Descriptors/DescriptorSet.h
  ../src/Magma.Core/Graphics/Graphics.h
  ../src/Magma.Core/Graphics/Pipelines/GraphicsPipeline.h
  ../src/Magma.Core/Graphics/Pipelines/Shader.h
+ ../src/Magma.Core/Graphics/Renderer2D.h
  ../src/Magma.Core/Graphics/Renderpass/Framebuffer.h
  ../src/Magma.Core/Graphics/Renderpass/Renderpass.h
  ../src/Magma.Core/Graphics/Renderpass/Swapchain.h
@@ -2327,12 +2740,246 @@ CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Pipelines/Shader.cpp.obj
  D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_xcb.h
  D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_xlib.h
  D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_xlib_xrandr.h
-CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Renderer2d.cpp.obj
+CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Renderer2D.cpp.obj
  ../src/Magma.Core/Base.h
+ ../src/Magma.Core/Devices/Instance.h
+ ../src/Magma.Core/Devices/LogicalDevice.h
+ ../src/Magma.Core/Devices/PhysicalDevice.h
+ ../src/Magma.Core/Devices/QueueFamilies.h
+ ../src/Magma.Core/Devices/Surface.h
+ ../src/Magma.Core/Engine/Log.h
  ../src/Magma.Core/Engine/Module.h
- ../src/Magma.Core/Graphics/Renderer2d.h
+ ../src/Magma.Core/Graphics/Buffers/Buffer.h
+ ../src/Magma.Core/Graphics/Buffers/UniformBuffer.h
+ ../src/Magma.Core/Graphics/Commands/CommandBuffer.h
+ ../src/Magma.Core/Graphics/Commands/CommandPool.h
+ ../src/Magma.Core/Graphics/Descriptors/DescriptorSet.h
+ ../src/Magma.Core/Graphics/Graphics.h
+ ../src/Magma.Core/Graphics/Pipelines/GraphicsPipeline.h
+ ../src/Magma.Core/Graphics/Pipelines/Shader.h
+ ../src/Magma.Core/Graphics/Renderer2D.h
+ ../src/Magma.Core/Graphics/Renderpass/Framebuffer.h
+ ../src/Magma.Core/Graphics/Renderpass/Renderpass.h
+ ../src/Magma.Core/Graphics/Renderpass/Swapchain.h
  ../src/Magma.Core/Types.h
- D:/Development/Projects/Magma/src/Magma.Core/Graphics/Renderer2d.cpp
+ ../src/Magma.Core/Window.h
+ ../submodules/glm/glm/common.hpp
+ ../submodules/glm/glm/detail/_fixes.hpp
+ ../submodules/glm/glm/detail/_swizzle.hpp
+ ../submodules/glm/glm/detail/_swizzle_func.hpp
+ ../submodules/glm/glm/detail/_vectorize.hpp
+ ../submodules/glm/glm/detail/compute_common.hpp
+ ../submodules/glm/glm/detail/compute_vector_relational.hpp
+ ../submodules/glm/glm/detail/func_common.inl
+ ../submodules/glm/glm/detail/func_common_simd.inl
+ ../submodules/glm/glm/detail/func_exponential.inl
+ ../submodules/glm/glm/detail/func_exponential_simd.inl
+ ../submodules/glm/glm/detail/func_geometric.inl
+ ../submodules/glm/glm/detail/func_geometric_simd.inl
+ ../submodules/glm/glm/detail/func_integer.inl
+ ../submodules/glm/glm/detail/func_integer_simd.inl
+ ../submodules/glm/glm/detail/func_matrix.inl
+ ../submodules/glm/glm/detail/func_matrix_simd.inl
+ ../submodules/glm/glm/detail/func_packing.inl
+ ../submodules/glm/glm/detail/func_packing_simd.inl
+ ../submodules/glm/glm/detail/func_trigonometric.inl
+ ../submodules/glm/glm/detail/func_trigonometric_simd.inl
+ ../submodules/glm/glm/detail/func_vector_relational.inl
+ ../submodules/glm/glm/detail/func_vector_relational_simd.inl
+ ../submodules/glm/glm/detail/qualifier.hpp
+ ../submodules/glm/glm/detail/setup.hpp
+ ../submodules/glm/glm/detail/type_half.hpp
+ ../submodules/glm/glm/detail/type_half.inl
+ ../submodules/glm/glm/detail/type_mat2x2.hpp
+ ../submodules/glm/glm/detail/type_mat2x2.inl
+ ../submodules/glm/glm/detail/type_mat2x3.hpp
+ ../submodules/glm/glm/detail/type_mat2x3.inl
+ ../submodules/glm/glm/detail/type_mat2x4.hpp
+ ../submodules/glm/glm/detail/type_mat2x4.inl
+ ../submodules/glm/glm/detail/type_mat3x2.hpp
+ ../submodules/glm/glm/detail/type_mat3x2.inl
+ ../submodules/glm/glm/detail/type_mat3x3.hpp
+ ../submodules/glm/glm/detail/type_mat3x3.inl
+ ../submodules/glm/glm/detail/type_mat3x4.hpp
+ ../submodules/glm/glm/detail/type_mat3x4.inl
+ ../submodules/glm/glm/detail/type_mat4x2.hpp
+ ../submodules/glm/glm/detail/type_mat4x2.inl
+ ../submodules/glm/glm/detail/type_mat4x3.hpp
+ ../submodules/glm/glm/detail/type_mat4x3.inl
+ ../submodules/glm/glm/detail/type_mat4x4.hpp
+ ../submodules/glm/glm/detail/type_mat4x4.inl
+ ../submodules/glm/glm/detail/type_mat4x4_simd.inl
+ ../submodules/glm/glm/detail/type_vec1.hpp
+ ../submodules/glm/glm/detail/type_vec1.inl
+ ../submodules/glm/glm/detail/type_vec2.hpp
+ ../submodules/glm/glm/detail/type_vec2.inl
+ ../submodules/glm/glm/detail/type_vec3.hpp
+ ../submodules/glm/glm/detail/type_vec3.inl
+ ../submodules/glm/glm/detail/type_vec4.hpp
+ ../submodules/glm/glm/detail/type_vec4.inl
+ ../submodules/glm/glm/detail/type_vec4_simd.inl
+ ../submodules/glm/glm/exponential.hpp
+ ../submodules/glm/glm/ext/matrix_clip_space.hpp
+ ../submodules/glm/glm/ext/matrix_clip_space.inl
+ ../submodules/glm/glm/ext/matrix_double2x2.hpp
+ ../submodules/glm/glm/ext/matrix_double2x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double2x3.hpp
+ ../submodules/glm/glm/ext/matrix_double2x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double2x4.hpp
+ ../submodules/glm/glm/ext/matrix_double2x4_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double3x2.hpp
+ ../submodules/glm/glm/ext/matrix_double3x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double3x3.hpp
+ ../submodules/glm/glm/ext/matrix_double3x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double3x4.hpp
+ ../submodules/glm/glm/ext/matrix_double3x4_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double4x2.hpp
+ ../submodules/glm/glm/ext/matrix_double4x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double4x3.hpp
+ ../submodules/glm/glm/ext/matrix_double4x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_double4x4.hpp
+ ../submodules/glm/glm/ext/matrix_double4x4_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float2x2.hpp
+ ../submodules/glm/glm/ext/matrix_float2x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float2x3.hpp
+ ../submodules/glm/glm/ext/matrix_float2x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float2x4.hpp
+ ../submodules/glm/glm/ext/matrix_float2x4_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float3x2.hpp
+ ../submodules/glm/glm/ext/matrix_float3x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float3x3.hpp
+ ../submodules/glm/glm/ext/matrix_float3x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float3x4.hpp
+ ../submodules/glm/glm/ext/matrix_float3x4_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float4x2.hpp
+ ../submodules/glm/glm/ext/matrix_float4x2_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float4x3.hpp
+ ../submodules/glm/glm/ext/matrix_float4x3_precision.hpp
+ ../submodules/glm/glm/ext/matrix_float4x4.hpp
+ ../submodules/glm/glm/ext/matrix_float4x4_precision.hpp
+ ../submodules/glm/glm/ext/matrix_projection.hpp
+ ../submodules/glm/glm/ext/matrix_projection.inl
+ ../submodules/glm/glm/ext/matrix_transform.hpp
+ ../submodules/glm/glm/ext/scalar_constants.hpp
+ ../submodules/glm/glm/ext/scalar_constants.inl
+ ../submodules/glm/glm/ext/scalar_int_sized.hpp
+ ../submodules/glm/glm/ext/scalar_uint_sized.hpp
+ ../submodules/glm/glm/ext/vector_bool2.hpp
+ ../submodules/glm/glm/ext/vector_bool2_precision.hpp
+ ../submodules/glm/glm/ext/vector_bool3.hpp
+ ../submodules/glm/glm/ext/vector_bool3_precision.hpp
+ ../submodules/glm/glm/ext/vector_bool4.hpp
+ ../submodules/glm/glm/ext/vector_bool4_precision.hpp
+ ../submodules/glm/glm/ext/vector_double2.hpp
+ ../submodules/glm/glm/ext/vector_double2_precision.hpp
+ ../submodules/glm/glm/ext/vector_double3.hpp
+ ../submodules/glm/glm/ext/vector_double3_precision.hpp
+ ../submodules/glm/glm/ext/vector_double4.hpp
+ ../submodules/glm/glm/ext/vector_double4_precision.hpp
+ ../submodules/glm/glm/ext/vector_float2.hpp
+ ../submodules/glm/glm/ext/vector_float2_precision.hpp
+ ../submodules/glm/glm/ext/vector_float3.hpp
+ ../submodules/glm/glm/ext/vector_float3_precision.hpp
+ ../submodules/glm/glm/ext/vector_float4.hpp
+ ../submodules/glm/glm/ext/vector_float4_precision.hpp
+ ../submodules/glm/glm/ext/vector_int2.hpp
+ ../submodules/glm/glm/ext/vector_int2_sized.hpp
+ ../submodules/glm/glm/ext/vector_int3.hpp
+ ../submodules/glm/glm/ext/vector_int3_sized.hpp
+ ../submodules/glm/glm/ext/vector_int4.hpp
+ ../submodules/glm/glm/ext/vector_int4_sized.hpp
+ ../submodules/glm/glm/ext/vector_uint2.hpp
+ ../submodules/glm/glm/ext/vector_uint2_sized.hpp
+ ../submodules/glm/glm/ext/vector_uint3.hpp
+ ../submodules/glm/glm/ext/vector_uint3_sized.hpp
+ ../submodules/glm/glm/ext/vector_uint4.hpp
+ ../submodules/glm/glm/ext/vector_uint4_sized.hpp
+ ../submodules/glm/glm/fwd.hpp
+ ../submodules/glm/glm/geometric.hpp
+ ../submodules/glm/glm/glm.hpp
+ ../submodules/glm/glm/gtc/constants.hpp
+ ../submodules/glm/glm/gtc/constants.inl
+ ../submodules/glm/glm/gtc/matrix_transform.hpp
+ ../submodules/glm/glm/gtc/matrix_transform.inl
+ ../submodules/glm/glm/integer.hpp
+ ../submodules/glm/glm/mat2x2.hpp
+ ../submodules/glm/glm/mat2x3.hpp
+ ../submodules/glm/glm/mat2x4.hpp
+ ../submodules/glm/glm/mat3x2.hpp
+ ../submodules/glm/glm/mat3x3.hpp
+ ../submodules/glm/glm/mat3x4.hpp
+ ../submodules/glm/glm/mat4x2.hpp
+ ../submodules/glm/glm/mat4x3.hpp
+ ../submodules/glm/glm/mat4x4.hpp
+ ../submodules/glm/glm/matrix.hpp
+ ../submodules/glm/glm/packing.hpp
+ ../submodules/glm/glm/simd/common.h
+ ../submodules/glm/glm/simd/exponential.h
+ ../submodules/glm/glm/simd/geometric.h
+ ../submodules/glm/glm/simd/integer.h
+ ../submodules/glm/glm/simd/matrix.h
+ ../submodules/glm/glm/simd/neon.h
+ ../submodules/glm/glm/simd/platform.h
+ ../submodules/glm/glm/trigonometric.hpp
+ ../submodules/glm/glm/vec2.hpp
+ ../submodules/glm/glm/vec3.hpp
+ ../submodules/glm/glm/vec4.hpp
+ ../submodules/glm/glm/vector_relational.hpp
+ ../submodules/spdlog/include/spdlog/common-inl.h
+ ../submodules/spdlog/include/spdlog/common.h
+ ../submodules/spdlog/include/spdlog/details/backtracer-inl.h
+ ../submodules/spdlog/include/spdlog/details/backtracer.h
+ ../submodules/spdlog/include/spdlog/details/circular_q.h
+ ../submodules/spdlog/include/spdlog/details/console_globals.h
+ ../submodules/spdlog/include/spdlog/details/fmt_helper.h
+ ../submodules/spdlog/include/spdlog/details/log_msg-inl.h
+ ../submodules/spdlog/include/spdlog/details/log_msg.h
+ ../submodules/spdlog/include/spdlog/details/log_msg_buffer-inl.h
+ ../submodules/spdlog/include/spdlog/details/log_msg_buffer.h
+ ../submodules/spdlog/include/spdlog/details/null_mutex.h
+ ../submodules/spdlog/include/spdlog/details/os-inl.h
+ ../submodules/spdlog/include/spdlog/details/os.h
+ ../submodules/spdlog/include/spdlog/details/pattern_formatter-inl.h
+ ../submodules/spdlog/include/spdlog/details/pattern_formatter.h
+ ../submodules/spdlog/include/spdlog/details/periodic_worker-inl.h
+ ../submodules/spdlog/include/spdlog/details/periodic_worker.h
+ ../submodules/spdlog/include/spdlog/details/registry-inl.h
+ ../submodules/spdlog/include/spdlog/details/registry.h
+ ../submodules/spdlog/include/spdlog/details/synchronous_factory.h
+ ../submodules/spdlog/include/spdlog/fmt/bundled/core.h
+ ../submodules/spdlog/include/spdlog/fmt/bundled/format-inl.h
+ ../submodules/spdlog/include/spdlog/fmt/bundled/format.h
+ ../submodules/spdlog/include/spdlog/fmt/fmt.h
+ ../submodules/spdlog/include/spdlog/formatter.h
+ ../submodules/spdlog/include/spdlog/logger-inl.h
+ ../submodules/spdlog/include/spdlog/logger.h
+ ../submodules/spdlog/include/spdlog/sinks/ansicolor_sink-inl.h
+ ../submodules/spdlog/include/spdlog/sinks/ansicolor_sink.h
+ ../submodules/spdlog/include/spdlog/sinks/sink-inl.h
+ ../submodules/spdlog/include/spdlog/sinks/sink.h
+ ../submodules/spdlog/include/spdlog/sinks/wincolor_sink-inl.h
+ ../submodules/spdlog/include/spdlog/sinks/wincolor_sink.h
+ ../submodules/spdlog/include/spdlog/spdlog-inl.h
+ ../submodules/spdlog/include/spdlog/spdlog.h
+ ../submodules/spdlog/include/spdlog/tweakme.h
+ ../submodules/spdlog/include/spdlog/version.h
+ D:/Development/Projects/Magma/src/Magma.Core/Graphics/Renderer2D.cpp
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vk_platform.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_android.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_beta.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_core.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_fuchsia.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_ggp.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_ios.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_macos.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_metal.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_vi.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_wayland.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_win32.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_xcb.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_xlib.h
+ D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vulkan_xlib_xrandr.h
 CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Renderpass/Framebuffer.cpp.obj
  ../src/Magma.Core/Base.h
  ../src/Magma.Core/Devices/Instance.h
@@ -2343,11 +2990,14 @@ CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Renderpass/Framebuffer.cpp.obj
  ../src/Magma.Core/Engine/Log.h
  ../src/Magma.Core/Engine/Module.h
  ../src/Magma.Core/Graphics/Buffers/Buffer.h
+ ../src/Magma.Core/Graphics/Buffers/UniformBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandPool.h
+ ../src/Magma.Core/Graphics/Descriptors/DescriptorSet.h
  ../src/Magma.Core/Graphics/Graphics.h
  ../src/Magma.Core/Graphics/Pipelines/GraphicsPipeline.h
  ../src/Magma.Core/Graphics/Pipelines/Shader.h
+ ../src/Magma.Core/Graphics/Renderer2D.h
  ../src/Magma.Core/Graphics/Renderpass/Framebuffer.h
  ../src/Magma.Core/Graphics/Renderpass/Renderpass.h
  ../src/Magma.Core/Graphics/Renderpass/Swapchain.h
@@ -2569,11 +3219,14 @@ CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Renderpass/Renderpass.cpp.obj
  ../src/Magma.Core/Engine/Log.h
  ../src/Magma.Core/Engine/Module.h
  ../src/Magma.Core/Graphics/Buffers/Buffer.h
+ ../src/Magma.Core/Graphics/Buffers/UniformBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandPool.h
+ ../src/Magma.Core/Graphics/Descriptors/DescriptorSet.h
  ../src/Magma.Core/Graphics/Graphics.h
  ../src/Magma.Core/Graphics/Pipelines/GraphicsPipeline.h
  ../src/Magma.Core/Graphics/Pipelines/Shader.h
+ ../src/Magma.Core/Graphics/Renderer2D.h
  ../src/Magma.Core/Graphics/Renderpass/Framebuffer.h
  ../src/Magma.Core/Graphics/Renderpass/Renderpass.h
  ../src/Magma.Core/Graphics/Renderpass/Swapchain.h
@@ -2795,11 +3448,14 @@ CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Renderpass/Swapchain.cpp.obj
  ../src/Magma.Core/Engine/Log.h
  ../src/Magma.Core/Engine/Module.h
  ../src/Magma.Core/Graphics/Buffers/Buffer.h
+ ../src/Magma.Core/Graphics/Buffers/UniformBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandBuffer.h
  ../src/Magma.Core/Graphics/Commands/CommandPool.h
+ ../src/Magma.Core/Graphics/Descriptors/DescriptorSet.h
  ../src/Magma.Core/Graphics/Graphics.h
  ../src/Magma.Core/Graphics/Pipelines/GraphicsPipeline.h
  ../src/Magma.Core/Graphics/Pipelines/Shader.h
+ ../src/Magma.Core/Graphics/Renderer2D.h
  ../src/Magma.Core/Graphics/Renderpass/Framebuffer.h
  ../src/Magma.Core/Graphics/Renderpass/Renderpass.h
  ../src/Magma.Core/Graphics/Renderpass/Swapchain.h

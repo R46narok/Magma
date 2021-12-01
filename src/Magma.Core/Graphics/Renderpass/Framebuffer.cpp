@@ -8,11 +8,10 @@
 
 namespace Magma
 {
-    Framebuffers::Framebuffers()
+    Framebuffers::Framebuffers(const Ref<Renderpass>& renderpass)
         : _Framebuffers()
     {
         auto device = Graphics::GetDevice()->GetVulkanDevice();
-        auto renderpass = Graphics::GetRenderpass()->GetVulkanRenderpass();
         auto swapchain = Graphics::GetSwapchain();
 
         auto extent = swapchain->GetExtent2D();
@@ -27,7 +26,7 @@ namespace Magma
 
             VkFramebufferCreateInfo createInfo{
                 .sType = VK_STRUCTURE_TYPE_FRAMEBUFFER_CREATE_INFO,
-                .renderPass = renderpass,
+                .renderPass = renderpass->GetVulkanRenderpass(),
                 .attachmentCount = 1,
                 .pAttachments = attachments,
                 .width = extent.width,

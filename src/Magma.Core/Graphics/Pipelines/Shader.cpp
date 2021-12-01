@@ -39,8 +39,8 @@ namespace Magma
 
     Shader::~Shader()
     {
-        auto device = Graphics::Get()->GetDevice();
-        //vkDestroyShaderModule(device->GetDevice(), _Module, nullptr);
+        auto device = Graphics::GetDevice()->GetVulkanDevice();
+        //vkDestroyShaderModule(device, _Module, nullptr);
     }
 
     void CopyShaderStageCreateInfo(const std::vector<Shader>& src, std::vector<VkPipelineShaderStageCreateInfo>& dst)

@@ -15,4 +15,18 @@
 #define _Magma_VkAssert(x, y) if((x) != VK_SUCCESS) {y; __debugbreak();}
 #define _Magma_Define_VkHandle(object) typedef struct object##_T* object;
 
+namespace Magma
+{
+
+    struct Configuration
+    {
+#ifdef _DEBUG
+        static constexpr bool IsDebug = true;
+#else
+        static constexpr bool IsDebug = false;
+#endif
+    };
+
+}
+
 #endif // MAGMA_BASE_H

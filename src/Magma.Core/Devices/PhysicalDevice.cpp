@@ -14,17 +14,15 @@
 
 namespace Magma
 {
-    PhysicalDevice::PhysicalDevice()
+    PhysicalDevice::PhysicalDevice(const Ref<Instance>& instance)
         : _PhysicalDevice(VK_NULL_HANDLE)
     {
-        auto instance = Graphics::GetInstance()->GetVulkanInstance();
-
         uint32_t iDeviceCount = 0;
-        vkEnumeratePhysicalDevices(instance, &iDeviceCount, nullptr);
+        vkEnumeratePhysicalDevices(instance->GetVulkanInstance(), &iDeviceCount, nullptr);
         _Magma_Assert(iDeviceCount != 0, _Magma_Core_Error("No Vulkan compatible device found"));
 
         std::vector<VkPhysicalDevice> devices(iDeviceCount);
-        vkEnumeratePhysicalDevices(instance, &iDeviceCount, devices.data());
+        vkEnumeratePhysicalDevices(instance->GetVulkanInstance(), &iDeviceCount, devices.data());
         _PhysicalDevice = ChoosePhysicalDevice(devices);
 
         vkGetPhysicalDeviceProperties(_PhysicalDevice, &_Properties);

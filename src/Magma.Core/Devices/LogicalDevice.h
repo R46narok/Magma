@@ -18,7 +18,11 @@ namespace Magma
     {
         friend class Graphics;
     public:
-        explicit LogicalDevice();
+        /// Creates the basic mechanism for Vulkan communication(VkDevice) and
+        /// all queue types required by the engine.
+        /// \param physicalDevice GPU to wrap.
+        /// \param surface Used to get queue family indices.
+        LogicalDevice(const Ref<PhysicalDevice>& physicalDevice, const Ref<Surface>& surface);
         ~LogicalDevice() noexcept;
 
         explicit operator const VkDevice &() const { return _Device; }
@@ -27,7 +31,12 @@ namespace Magma
         [[nodiscard]] const VkDevice& GetVulkanDevice() const noexcept { return _Device; }
 
         [[nodiscard]] const VkQueue& GetGraphicsQueue() const noexcept { return _GraphicsQueue; }
+        [[nodiscard]] const VkQueue& GetPresentQueue() const noexcept { return _PresentQueue; }
     private:
+        /// Populates VkDeviceQueueCreateInfo and does not the particular queue any priority.
+        /// One queue is set for creation.
+        /// \param createInfo Structure to populate.
+        /// \param index Queue family index.
         static void PopulateDeviceQueueCreateInfo(VkDeviceQueueCreateInfo& createInfo, uint32_t index) noexcept;
     private:
         VkDevice _Device;

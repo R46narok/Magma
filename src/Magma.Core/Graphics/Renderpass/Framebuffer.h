@@ -7,6 +7,7 @@
 
 #include "Magma.Core/Base.h"
 #include "Magma.Core/Types.h"
+#include "Magma.Core/Graphics/Renderpass/Renderpass.h"
 
 #include <vector>
 #include <vulkan/vulkan.h>
@@ -17,8 +18,13 @@ namespace Magma
     class _Magma_Dll Framebuffers
     {
     public:
-        explicit Framebuffers();
+        explicit Framebuffers(const Ref<Renderpass>& renderpass);
         ~Framebuffers();
+
+        VkFramebuffer& operator[](int index)
+        {
+            return _Framebuffers[index];
+        }
 
         [[nodiscard]] const std::vector<VkFramebuffer>& GetFramebuffers() const noexcept { return _Framebuffers; }
     private:

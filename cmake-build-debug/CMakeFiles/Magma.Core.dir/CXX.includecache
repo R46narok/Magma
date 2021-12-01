@@ -8,6 +8,26 @@
 
 ../src/Magma.Core/Base.h
 
+../src/Magma.Core/Debug/ValidationLayers.h
+Magma.Core/Base.h
+../src/Magma.Core/Debug/Magma.Core/Base.h
+Magma.Core/Types.h
+../src/Magma.Core/Debug/Magma.Core/Types.h
+Magma.Core/Devices/Instance.h
+../src/Magma.Core/Debug/Magma.Core/Devices/Instance.h
+vector
+-
+
+../src/Magma.Core/Devices/Ext.h
+Magma.Core/Base.h
+../src/Magma.Core/Devices/Magma.Core/Base.h
+Magma.Core/Types.h
+../src/Magma.Core/Devices/Magma.Core/Types.h
+vector
+-
+vulkan/vulkan.h
+-
+
 ../src/Magma.Core/Devices/Instance.h
 Magma.Core/Base.h
 ../src/Magma.Core/Devices/Magma.Core/Base.h
@@ -102,6 +122,10 @@ Magma.Core/Graphics/Commands/CommandPool.h
 vulkan/vulkan.h
 -
 
+../src/Magma.Core/Graphics/Buffers/UniformBuffer.h
+Magma.Core/Graphics/Buffers/Buffer.h
+../src/Magma.Core/Graphics/Buffers/Magma.Core/Graphics/Buffers/Buffer.h
+
 ../src/Magma.Core/Graphics/Commands/CommandBuffer.h
 Magma.Core/Base.h
 ../src/Magma.Core/Graphics/Commands/Magma.Core/Base.h
@@ -129,6 +153,18 @@ Magma.Core/Devices/LogicalDevice.h
 ../src/Magma.Core/Graphics/Commands/Magma.Core/Devices/LogicalDevice.h
 Magma.Core/Devices/Surface.h
 ../src/Magma.Core/Graphics/Commands/Magma.Core/Devices/Surface.h
+vulkan/vulkan.h
+-
+
+../src/Magma.Core/Graphics/Descriptors/DescriptorSet.h
+Magma.Core/Base.h
+../src/Magma.Core/Graphics/Descriptors/Magma.Core/Base.h
+Magma.Core/Types.h
+../src/Magma.Core/Graphics/Descriptors/Magma.Core/Types.h
+string
+-
+initializer_list
+-
 vulkan/vulkan.h
 -
 
@@ -161,6 +197,8 @@ Magma.Core/Graphics/Commands/CommandPool.h
 ../src/Magma.Core/Graphics/Magma.Core/Graphics/Commands/CommandPool.h
 Magma.Core/Graphics/Buffers/Buffer.h
 ../src/Magma.Core/Graphics/Magma.Core/Graphics/Buffers/Buffer.h
+Magma.Core/Graphics/Renderer2D.h
+../src/Magma.Core/Graphics/Magma.Core/Graphics/Renderer2D.h
 Magma.Core/Window.h
 ../src/Magma.Core/Graphics/Magma.Core/Window.h
 vector
@@ -173,8 +211,12 @@ Magma.Core/Base.h
 ../src/Magma.Core/Graphics/Pipelines/Magma.Core/Base.h
 Magma.Core/Types.h
 ../src/Magma.Core/Graphics/Pipelines/Magma.Core/Types.h
+Magma.Core/Graphics/Renderpass/Renderpass.h
+../src/Magma.Core/Graphics/Pipelines/Magma.Core/Graphics/Renderpass/Renderpass.h
 Magma.Core/Graphics/Pipelines/Shader.h
 ../src/Magma.Core/Graphics/Pipelines/Magma.Core/Graphics/Pipelines/Shader.h
+Magma.Core/Graphics/Descriptors/DescriptorSet.h
+../src/Magma.Core/Graphics/Pipelines/Magma.Core/Graphics/Descriptors/DescriptorSet.h
 filesystem
 -
 vulkan/vulkan.h
@@ -196,11 +238,33 @@ vector
 filesystem
 -
 
+../src/Magma.Core/Graphics/Renderer2D.h
+Magma.Core/Base.h
+../src/Magma.Core/Graphics/Magma.Core/Base.h
+Magma.Core/Types.h
+../src/Magma.Core/Graphics/Magma.Core/Types.h
+Magma.Core/Engine/Module.h
+../src/Magma.Core/Graphics/Magma.Core/Engine/Module.h
+Magma.Core/Graphics/Renderpass/Renderpass.h
+../src/Magma.Core/Graphics/Magma.Core/Graphics/Renderpass/Renderpass.h
+Magma.Core/Graphics/Pipelines/GraphicsPipeline.h
+../src/Magma.Core/Graphics/Magma.Core/Graphics/Pipelines/GraphicsPipeline.h
+Magma.Core/Graphics/Commands/CommandBuffer.h
+../src/Magma.Core/Graphics/Magma.Core/Graphics/Commands/CommandBuffer.h
+Magma.Core/Graphics/Buffers/Buffer.h
+../src/Magma.Core/Graphics/Magma.Core/Graphics/Buffers/Buffer.h
+Magma.Core/Graphics/Buffers/UniformBuffer.h
+../src/Magma.Core/Graphics/Magma.Core/Graphics/Buffers/UniformBuffer.h
+vulkan/vulkan.h
+-
+
 ../src/Magma.Core/Graphics/Renderpass/Framebuffer.h
 Magma.Core/Base.h
 ../src/Magma.Core/Graphics/Renderpass/Magma.Core/Base.h
 Magma.Core/Types.h
 ../src/Magma.Core/Graphics/Renderpass/Magma.Core/Types.h
+Magma.Core/Graphics/Renderpass/Renderpass.h
+../src/Magma.Core/Graphics/Renderpass/Magma.Core/Graphics/Renderpass/Renderpass.h
 vector
 -
 vulkan/vulkan.h
@@ -1772,22 +1836,18 @@ spdlog-inl.h
 
 ../submodules/spdlog/include/spdlog/version.h
 
-D:/Development/Projects/Magma/src/Magma.Core/Devices/PhysicalDevice.cpp
-Magma.Core/Devices/PhysicalDevice.h
-D:/Development/Projects/Magma/src/Magma.Core/Devices/Magma.Core/Devices/PhysicalDevice.h
-Magma.Core/Graphics/Renderpass/Swapchain.h
-D:/Development/Projects/Magma/src/Magma.Core/Devices/Magma.Core/Graphics/Renderpass/Swapchain.h
-Magma.Core/Graphics/Graphics.h
-D:/Development/Projects/Magma/src/Magma.Core/Devices/Magma.Core/Graphics/Graphics.h
+D:/Development/Projects/Magma/src/Magma.Core/Devices/Instance.cpp
+Magma.Core/Devices/Instance.h
+D:/Development/Projects/Magma/src/Magma.Core/Devices/Magma.Core/Devices/Instance.h
+Magma.Core/Devices/Ext.h
+D:/Development/Projects/Magma/src/Magma.Core/Devices/Magma.Core/Devices/Ext.h
+Magma.Core/Debug/ValidationLayers.h
+D:/Development/Projects/Magma/src/Magma.Core/Devices/Magma.Core/Debug/ValidationLayers.h
 Magma.Core/Engine/Log.h
 D:/Development/Projects/Magma/src/Magma.Core/Devices/Magma.Core/Engine/Log.h
-vector
--
-map
--
-set
--
-string
+Magma.Core/Graphics/Graphics.h
+D:/Development/Projects/Magma/src/Magma.Core/Devices/Magma.Core/Graphics/Graphics.h
+vulkan/vulkan.h
 -
 
 D:/Development/VulkanSDK/1.2.135.0/Include/vulkan/vk_platform.h

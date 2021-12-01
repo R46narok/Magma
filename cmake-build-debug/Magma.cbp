@@ -402,6 +402,12 @@
 		<Unit filename="D:/Development/Projects/Magma/src/Magma.Core/Graphics/Commands/CommandPool.h">
 			<Option target="Magma.Core"/>
 		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/src/Magma.Core/Graphics/Descriptors/DescriptorSet.cpp">
+			<Option target="Magma.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/src/Magma.Core/Graphics/Descriptors/DescriptorSet.h">
+			<Option target="Magma.Core"/>
+		</Unit>
 		<Unit filename="D:/Development/Projects/Magma/src/Magma.Core/Graphics/Graphics.cpp">
 			<Option target="Magma.Core"/>
 		</Unit>

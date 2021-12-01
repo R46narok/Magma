@@ -13,13 +13,10 @@
 
 namespace Magma
 {
-    LogicalDevice::LogicalDevice()
-        : _Device(VK_NULL_HANDLE)
+    LogicalDevice::LogicalDevice(const Ref<PhysicalDevice>& physicalDevice, const Ref<Surface>& surface)
+        : _Device(VK_NULL_HANDLE), _GraphicsQueue(VK_NULL_HANDLE), _PresentQueue(VK_NULL_HANDLE)
     {
-        auto physicalDevice = Graphics::GetPhysicalDevice()->GetVulkanPhysicalDevice();
-        auto surface = Graphics::GetSurface()->GetVulkanSurface();
-
-        auto indices = FindQueueFamilies(physicalDevice, surface);
+        auto indices = FindQueueFamilies(physicalDevice->GetVulkanPhysicalDevice(), surface->GetVulkanSurface());
         std::array<VkDeviceQueueCreateInfo, 2> queueCreateInfos{};
         std::array<uint32_t , 2> queueFamilies{indices.GraphicsFamily.value(), indices.PresentFamily.value()};
 
@@ -40,8 +37,7 @@ namespace Magma
             .pEnabledFeatures = &deviceFeatures,
         };
 
-        auto result = vkCreateDevice(physicalDevice, &deviceCreateInfo, nullptr, &_Device);
-        _Magma_Assert(result == VK_SUCCESS, _Magma_Core_Error("Could not create VkDevice"));
+        Graphics::CheckVk(vkCreateDevice(physicalDevice->GetVulkanPhysicalDevice(), &deviceCreateInfo, nullptr, &_Device));
 
         vkGetDeviceQueue(_Device, indices.GraphicsFamily.value(), 0, &_GraphicsQueue);
         vkGetDeviceQueue(_Device, indices.PresentFamily.value(), 0, &_PresentQueue);

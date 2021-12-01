@@ -178,8 +178,8 @@ submodules\spdlog\clean: submodules\spdlog\CMakeFiles\spdlog.dir\clean
 
 # All Build rule for target.
 CMakeFiles\Magma.Client.dir\all: CMakeFiles\Magma.Core.dir\all
-CMakeFiles\Magma.Client.dir\all: submodules\glfw\src\CMakeFiles\glfw.dir\all
 CMakeFiles\Magma.Client.dir\all: submodules\spdlog\CMakeFiles\spdlog.dir\all
+CMakeFiles\Magma.Client.dir\all: submodules\glfw\src\CMakeFiles\glfw.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Magma.Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Magma.Client.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Magma.Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Magma.Client.dir\build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target Magma.Client"
@@ -187,7 +187,7 @@ CMakeFiles\Magma.Client.dir\all: submodules\spdlog\CMakeFiles\spdlog.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\Magma.Client.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles 57
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\Magma.Client.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles\Magma.Client.dir\rule
@@ -206,16 +206,16 @@ CMakeFiles\Magma.Client.dir\clean:
 # Target rules for target CMakeFiles/Magma.Core.dir
 
 # All Build rule for target.
-CMakeFiles\Magma.Core.dir\all: submodules\glfw\src\CMakeFiles\glfw.dir\all
 CMakeFiles\Magma.Core.dir\all: submodules\spdlog\CMakeFiles\spdlog.dir\all
+CMakeFiles\Magma.Core.dir\all: submodules\glfw\src\CMakeFiles\glfw.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Magma.Core.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Magma.Core.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Magma.Core.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Magma.Core.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27 "Built target Magma.Core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28 "Built target Magma.Core"
 .PHONY : CMakeFiles\Magma.Core.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\Magma.Core.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles 54
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\Magma.Core.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles\Magma.Core.dir\rule
@@ -264,7 +264,7 @@ submodules\glfw\CMakeFiles\uninstall.dir\clean:
 submodules\glfw\src\CMakeFiles\glfw.dir\all:
 	$(MAKE) $(MAKESILENT) -f submodules\glfw\src\CMakeFiles\glfw.dir\build.make /nologo -$(MAKEFLAGS) submodules\glfw\src\CMakeFiles\glfw.dir\depend
 	$(MAKE) $(MAKESILENT) -f submodules\glfw\src\CMakeFiles\glfw.dir\build.make /nologo -$(MAKEFLAGS) submodules\glfw\src\CMakeFiles\glfw.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50 "Built target glfw"
 .PHONY : submodules\glfw\src\CMakeFiles\glfw.dir\all
 
 # Build rule for subdir invocation for target.
@@ -291,7 +291,7 @@ submodules\glfw\src\CMakeFiles\glfw.dir\clean:
 submodules\glfw\src\CMakeFiles\update_mappings.dir\all:
 	$(MAKE) $(MAKESILENT) -f submodules\glfw\src\CMakeFiles\update_mappings.dir\build.make /nologo -$(MAKEFLAGS) submodules\glfw\src\CMakeFiles\update_mappings.dir\depend
 	$(MAKE) $(MAKESILENT) -f submodules\glfw\src\CMakeFiles\update_mappings.dir\build.make /nologo -$(MAKEFLAGS) submodules\glfw\src\CMakeFiles\update_mappings.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=57 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=58 "Built target update_mappings"
 .PHONY : submodules\glfw\src\CMakeFiles\update_mappings.dir\all
 
 # Build rule for subdir invocation for target.
@@ -318,7 +318,7 @@ submodules\glfw\src\CMakeFiles\update_mappings.dir\clean:
 submodules\spdlog\CMakeFiles\spdlog.dir\all:
 	$(MAKE) $(MAKESILENT) -f submodules\spdlog\CMakeFiles\spdlog.dir\build.make /nologo -$(MAKEFLAGS) submodules\spdlog\CMakeFiles\spdlog.dir\depend
 	$(MAKE) $(MAKESILENT) -f submodules\spdlog\CMakeFiles\spdlog.dir\build.make /nologo -$(MAKEFLAGS) submodules\spdlog\CMakeFiles\spdlog.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=50,51,52,53,54,55,56 "Built target spdlog"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=51,52,53,54,55,56,57 "Built target spdlog"
 .PHONY : submodules\spdlog\CMakeFiles\spdlog.dir\all
 
 # Build rule for subdir invocation for target.

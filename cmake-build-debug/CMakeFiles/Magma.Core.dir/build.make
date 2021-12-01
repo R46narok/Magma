@@ -384,9 +384,28 @@ CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Buffers\UniformBuffer.cpp.s: c
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Buffers\UniformBuffer.cpp.s /c D:\Development\Projects\Magma\src\Magma.Core\Graphics\Buffers\UniformBuffer.cpp
 <<
 
+CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.obj: CMakeFiles\Magma.Core.dir\flags.make
+CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.obj: ..\src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Descriptors/DescriptorSet.cpp.obj"
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.obj /FdCMakeFiles\Magma.Core.dir\ /FS -c D:\Development\Projects\Magma\src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp
+<<
+
+CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Descriptors/DescriptorSet.cpp.i"
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\cl.exe > CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Development\Projects\Magma\src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp
+<<
+
+CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Descriptors/DescriptorSet.cpp.s"
+	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.s /c D:\Development\Projects\Magma\src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp
+<<
+
 CMakeFiles\Magma.Core.dir\src\Magma.Core\Window.cpp.obj: CMakeFiles\Magma.Core.dir\flags.make
 CMakeFiles\Magma.Core.dir\src\Magma.Core\Window.cpp.obj: ..\src\Magma.Core\Window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Magma.Core.dir/src/Magma.Core/Window.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Magma.Core.dir/src/Magma.Core/Window.cpp.obj"
 	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Magma.Core.dir\src\Magma.Core\Window.cpp.obj /FdCMakeFiles\Magma.Core.dir\ /FS -c D:\Development\Projects\Magma\src\Magma.Core\Window.cpp
 <<
@@ -405,7 +424,7 @@ CMakeFiles\Magma.Core.dir\src\Magma.Core\Window.cpp.s: cmake_force
 
 CMakeFiles\Magma.Core.dir\src\Magma.Core\Engine\Log.cpp.obj: CMakeFiles\Magma.Core.dir\flags.make
 CMakeFiles\Magma.Core.dir\src\Magma.Core\Engine\Log.cpp.obj: ..\src\Magma.Core\Engine\Log.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Magma.Core.dir/src/Magma.Core/Engine/Log.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Magma.Core.dir/src/Magma.Core/Engine/Log.cpp.obj"
 	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Magma.Core.dir\src\Magma.Core\Engine\Log.cpp.obj /FdCMakeFiles\Magma.Core.dir\ /FS -c D:\Development\Projects\Magma\src\Magma.Core\Engine\Log.cpp
 <<
@@ -424,7 +443,7 @@ CMakeFiles\Magma.Core.dir\src\Magma.Core\Engine\Log.cpp.s: cmake_force
 
 CMakeFiles\Magma.Core.dir\src\Magma.Core\Devices\Instance.cpp.obj: CMakeFiles\Magma.Core.dir\flags.make
 CMakeFiles\Magma.Core.dir\src\Magma.Core\Devices\Instance.cpp.obj: ..\src\Magma.Core\Devices\Instance.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Magma.Core.dir/src/Magma.Core/Devices/Instance.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Magma.Core.dir/src/Magma.Core/Devices/Instance.cpp.obj"
 	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Magma.Core.dir\src\Magma.Core\Devices\Instance.cpp.obj /FdCMakeFiles\Magma.Core.dir\ /FS -c D:\Development\Projects\Magma\src\Magma.Core\Devices\Instance.cpp
 <<
@@ -443,7 +462,7 @@ CMakeFiles\Magma.Core.dir\src\Magma.Core\Devices\Instance.cpp.s: cmake_force
 
 CMakeFiles\Magma.Core.dir\src\Magma.Core\Debug\ValidationLayers.cpp.obj: CMakeFiles\Magma.Core.dir\flags.make
 CMakeFiles\Magma.Core.dir\src\Magma.Core\Debug\ValidationLayers.cpp.obj: ..\src\Magma.Core\Debug\ValidationLayers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Magma.Core.dir/src/Magma.Core/Debug/ValidationLayers.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Magma.Core.dir/src/Magma.Core/Debug/ValidationLayers.cpp.obj"
 	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Magma.Core.dir\src\Magma.Core\Debug\ValidationLayers.cpp.obj /FdCMakeFiles\Magma.Core.dir\ /FS -c D:\Development\Projects\Magma\src\Magma.Core\Debug\ValidationLayers.cpp
 <<
@@ -462,7 +481,7 @@ CMakeFiles\Magma.Core.dir\src\Magma.Core\Debug\ValidationLayers.cpp.s: cmake_for
 
 CMakeFiles\Magma.Core.dir\src\Magma.Core\Devices\Ext.cpp.obj: CMakeFiles\Magma.Core.dir\flags.make
 CMakeFiles\Magma.Core.dir\src\Magma.Core\Devices\Ext.cpp.obj: ..\src\Magma.Core\Devices\Ext.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Magma.Core.dir/src/Magma.Core/Devices/Ext.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Magma.Core.dir/src/Magma.Core/Devices/Ext.cpp.obj"
 	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Magma.Core.dir\src\Magma.Core\Devices\Ext.cpp.obj /FdCMakeFiles\Magma.Core.dir\ /FS -c D:\Development\Projects\Magma\src\Magma.Core\Devices\Ext.cpp
 <<
@@ -481,7 +500,7 @@ CMakeFiles\Magma.Core.dir\src\Magma.Core\Devices\Ext.cpp.s: cmake_force
 
 CMakeFiles\Magma.Core.dir\src\Magma.Core\Engine\Engine.cpp.obj: CMakeFiles\Magma.Core.dir\flags.make
 CMakeFiles\Magma.Core.dir\src\Magma.Core\Engine\Engine.cpp.obj: ..\src\Magma.Core\Engine\Engine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Magma.Core.dir/src/Magma.Core/Engine/Engine.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Magma.Core.dir/src/Magma.Core/Engine/Engine.cpp.obj"
 	C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Magma.Core.dir\src\Magma.Core\Engine\Engine.cpp.obj /FdCMakeFiles\Magma.Core.dir\ /FS -c D:\Development\Projects\Magma\src\Magma.Core\Engine\Engine.cpp
 <<
@@ -517,6 +536,7 @@ Magma_Core_OBJECTS = \
 "CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Renderer2D.cpp.obj" \
 "CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Buffers\Buffer.cpp.obj" \
 "CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Buffers\UniformBuffer.cpp.obj" \
+"CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.obj" \
 "CMakeFiles\Magma.Core.dir\src\Magma.Core\Window.cpp.obj" \
 "CMakeFiles\Magma.Core.dir\src\Magma.Core\Engine\Log.cpp.obj" \
 "CMakeFiles\Magma.Core.dir\src\Magma.Core\Devices\Instance.cpp.obj" \
@@ -544,6 +564,7 @@ bin\Magma.Core.dll: CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Commands\C
 bin\Magma.Core.dll: CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Renderer2D.cpp.obj
 bin\Magma.Core.dll: CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Buffers\Buffer.cpp.obj
 bin\Magma.Core.dll: CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Buffers\UniformBuffer.cpp.obj
+bin\Magma.Core.dll: CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Descriptors\DescriptorSet.cpp.obj
 bin\Magma.Core.dll: CMakeFiles\Magma.Core.dir\src\Magma.Core\Window.cpp.obj
 bin\Magma.Core.dll: CMakeFiles\Magma.Core.dir\src\Magma.Core\Engine\Log.cpp.obj
 bin\Magma.Core.dll: CMakeFiles\Magma.Core.dir\src\Magma.Core\Devices\Instance.cpp.obj
@@ -555,7 +576,7 @@ bin\Magma.Core.dll: submodules\glfw\src\glfw3.lib
 bin\Magma.Core.dll: D:\Development\VulkanSDK\1.2.135.0\Lib\vulkan-1.lib
 bin\Magma.Core.dll: submodules\spdlog\spdlogd.lib
 bin\Magma.Core.dll: CMakeFiles\Magma.Core.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX shared library bin\Magma.Core.dll"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX shared library bin\Magma.Core.dll"
 	"D:\Development\Software\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -E vs_link_dll --intdir=CMakeFiles\Magma.Core.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests  -- C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\Magma.Core.dir\objects1.rsp @<<
  /out:bin\Magma.Core.dll /implib:Magma.Core.lib /pdb:D:\Development\Projects\Magma\cmake-build-debug\bin\Magma.Core.pdb /dll /version:0.0 /machine:x64 /debug /INCREMENTAL  submodules\glfw\src\glfw3.lib D:\Development\VulkanSDK\1.2.135.0\Lib\vulkan-1.lib submodules\spdlog\spdlogd.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib  
 <<

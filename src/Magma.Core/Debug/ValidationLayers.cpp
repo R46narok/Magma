@@ -64,7 +64,6 @@ namespace Magma
             case VK_DEBUG_UTILS_MESSAGE_SEVERITY_INFO_BIT_EXT:    _Magma_Core_Info(pCallbackData->pMessage); break;
             case VK_DEBUG_UTILS_MESSAGE_SEVERITY_WARNING_BIT_EXT: _Magma_Core_Warn(pCallbackData->pMessage); break;
             case VK_DEBUG_UTILS_MESSAGE_SEVERITY_ERROR_BIT_EXT:   _Magma_Core_Error(pCallbackData->pMessage); break;
-
         }
 
         return VK_FALSE;

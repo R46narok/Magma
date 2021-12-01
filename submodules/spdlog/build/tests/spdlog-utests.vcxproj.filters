@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\test_file_helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\test_file_logging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\test_daily_logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\test_misc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\test_pattern_formatter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\test_async.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\test_registry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\test_macros.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\test_mpmc_q.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\test_dup_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\test_fmt_helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\test_stdout_api.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\test_backtrace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\test_create_dir.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\test_errors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\tests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{57FE4624-D037-3A4B-907F-80B4B4C86E65}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

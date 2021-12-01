@@ -15,7 +15,11 @@ namespace Magma
     class _Magma_Dll Instance
     {
     public:
+        /// Checks the system for extension support, creates a Vulkan Instance,
+        /// and enables validation layer output if the build configuration is Debug.
         Instance();
+
+        /// Also destroys VkDebugUtilsMessengerEXT if the build configuration is Debug.
         ~Instance() noexcept;
 
         explicit operator const VkInstance &() const { return _Instance; }

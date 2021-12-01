@@ -6,6 +6,7 @@
 #include "Magma.Core/Devices/Ext.h"
 #include "Magma.Core/Debug/ValidationLayers.h"
 #include "Magma.Core/Engine/Log.h"
+#include "Magma.Core/Graphics/Graphics.h"
 
 #include <vulkan/vulkan.h>
 
@@ -40,19 +41,25 @@ namespace Magma
 
         createInfo.enabledExtensionCount = extensions.size();
         createInfo.ppEnabledExtensionNames = extensions.data();
-        createInfo.ppEnabledLayerNames = layers.data();
-        createInfo.enabledLayerCount = static_cast<uint32_t>(layers.size());
 
-        auto result = vkCreateInstance(&createInfo, nullptr, &_Instance);
-        _Magma_Assert(result == VK_SUCCESS, _Magma_Core_Error("Failed to create a VkInstance"));
-        _Magma_Core_Info("VkInstance created");
+        if (Configuration::IsDebug && !layers.empty())
+        {
+            createInfo.ppEnabledLayerNames = layers.data();
+            createInfo.enabledLayerCount = static_cast<uint32_t>(layers.size());
+        }
+
+        Graphics::CheckVk(vkCreateInstance(&createInfo, nullptr, &_Instance));
+        _Magma_Core_Info("VkInstance created - Vulkan Version 1.0");
 
         EnableValidationLayersOutput(_Instance);
     }
 
     Instance::~Instance() noexcept
     {
-        DestroyDebugUtilsMessenger(_Instance);
+        if (Configuration::IsDebug)
+        {
+            DestroyDebugUtilsMessenger(_Instance);
+        }
         vkDestroyInstance(_Instance, nullptr);
     }
 }

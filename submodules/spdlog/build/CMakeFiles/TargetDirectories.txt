@@ -1,0 +1,16 @@
+D:/Development/Projects/Vortex/Dependencies/spdlog-1.5.0/build/CMakeFiles/spdlog.dir
+D:/Development/Projects/Vortex/Dependencies/spdlog-1.5.0/build/CMakeFiles/PACKAGE.dir
+D:/Development/Projects/Vortex/Dependencies/spdlog-1.5.0/build/CMakeFiles/INSTALL.dir
+D:/Development/Projects/Vortex/Dependencies/spdlog-1.5.0/build/CMakeFiles/RUN_TESTS.dir
+D:/Development/Projects/Vortex/Dependencies/spdlog-1.5.0/build/CMakeFiles/ALL_BUILD.dir
+D:/Development/Projects/Vortex/Dependencies/spdlog-1.5.0/build/CMakeFiles/ZERO_CHECK.dir
+D:/Development/Projects/Vortex/Dependencies/spdlog-1.5.0/build/example/CMakeFiles/example.dir
+D:/Development/Projects/Vortex/Dependencies/spdlog-1.5.0/build/example/CMakeFiles/PACKAGE.dir
+D:/Development/Projects/Vortex/Dependencies/spdlog-1.5.0/build/example/CMakeFiles/INSTALL.dir
+D:/Development/Projects/Vortex/Dependencies/spdlog-1.5.0/build/example/CMakeFiles/RUN_TESTS.dir
+D:/Development/Projects/Vortex/Dependencies/spdlog-1.5.0/build/example/CMakeFiles/ALL_BUILD.dir
+D:/Development/Projects/Vortex/Dependencies/spdlog-1.5.0/build/tests/CMakeFiles/PACKAGE.dir
+D:/Development/Projects/Vortex/Dependencies/spdlog-1.5.0/build/tests/CMakeFiles/spdlog-utests.dir
+D:/Development/Projects/Vortex/Dependencies/spdlog-1.5.0/build/tests/CMakeFiles/INSTALL.dir
+D:/Development/Projects/Vortex/Dependencies/spdlog-1.5.0/build/tests/CMakeFiles/RUN_TESTS.dir
+D:/Development/Projects/Vortex/Dependencies/spdlog-1.5.0/build/tests/CMakeFiles/ALL_BUILD.dir

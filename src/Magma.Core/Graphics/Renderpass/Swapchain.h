@@ -37,6 +37,7 @@ namespace Magma
         [[nodiscard]] const VkExtent2D& GetExtent2D() const noexcept { return _Extent; }
         [[nodiscard]] const VkFormat& GetFormat() const noexcept { return _Format; }
         [[nodiscard]] const std::vector<VkImageView>& GetImageViews() const noexcept { return _ImageViews; }
+        [[nodiscard]] uint32_t GetImageCount() const noexcept { return _ImageViews.size(); }
     private:
         void CreateImageViews();
         static VkSurfaceFormatKHR ChooseFormat(const std::vector<VkSurfaceFormatKHR>& formats);

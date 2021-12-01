@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Development\Projects\Vortex\Dependencies\spdlog-1.5.0\build\CMakeFiles\20477b442c03011917e9147ca8ce6c98\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1B9A94AC-D239-3A2E-A1AF-674CA2F4B03C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
