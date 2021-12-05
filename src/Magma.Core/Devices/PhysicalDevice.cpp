@@ -19,7 +19,7 @@ namespace Magma
     {
         uint32_t iDeviceCount = 0;
         vkEnumeratePhysicalDevices(instance->GetVulkanInstance(), &iDeviceCount, nullptr);
-        _Magma_Assert(iDeviceCount != 0, _Magma_Core_Error("No Vulkan compatible device found"));
+        _Magma_Assert(iDeviceCount != 0, "No Vulkan compatible device found");
 
         std::vector<VkPhysicalDevice> devices(iDeviceCount);
         vkEnumeratePhysicalDevices(instance->GetVulkanInstance(), &iDeviceCount, devices.data());

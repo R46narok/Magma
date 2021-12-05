@@ -22,6 +22,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Renderpass/Framebuffer.cpp.obj"
   "CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Renderpass/Renderpass.cpp.obj"
   "CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Renderpass/Swapchain.cpp.obj"
+  "CMakeFiles/Magma.Core.dir/src/Magma.Core/Utils/String.cpp.obj"
   "CMakeFiles/Magma.Core.dir/src/Magma.Core/Window.cpp.obj"
   "Magma.Core.lib"
   "bin/Magma.Core.dll"

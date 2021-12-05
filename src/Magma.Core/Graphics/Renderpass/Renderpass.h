@@ -18,7 +18,7 @@ namespace Magma
 {
     class Framebuffers;
 
-    class _Magma_Dll Renderpass
+    class MAGMA_API Renderpass
     {
     public:
         explicit Renderpass();

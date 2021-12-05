@@ -43,6 +43,11 @@ namespace Magma
         }
     }
 
+    Engine::~Engine()
+    {
+        Module::Registry().clear();
+    }
+
     void Engine::Run()
     {
         while (Window::Get()->IsAlive())
@@ -62,4 +67,5 @@ namespace Magma
                 module->Update();
         }
     }
+
 }

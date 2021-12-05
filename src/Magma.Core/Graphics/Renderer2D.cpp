@@ -26,9 +26,9 @@ namespace Magma
             };
         }
 
-        static std::array<VkVertexInputAttributeDescription, 2> GetAttributes()
+        static std::vector<VkVertexInputAttributeDescription> GetAttributes()
         {
-            std::array<VkVertexInputAttributeDescription, 2> attribs{};
+            std::vector<VkVertexInputAttributeDescription> attribs(2);
 
             attribs[0].binding = 0;
             attribs[0].location = 0;
@@ -84,8 +84,13 @@ namespace Magma
             UniformBuffers.push_back(CreateRef<UniformBuffer>(sizeof(UniformBufferObject)));
         }
 
-        std::vector<std::filesystem::path> shaders{"vert.spv", "frag.spv"};
-        _Pipeline = CreateRef<GraphicsPipeline>(shaders, _Renderpass, Vertex2D::GetBinding(), Vertex2D::GetAttributes(), *layout);
+        /*Shader vertex("vert.spv", ShaderStage::Vertex);
+        Shader fragment("frag.spv", ShaderStage::Fragment);
+        vertex.PushUniform({"UniformBufferObject", 0, 0, sizeof(UniformBufferObject), ShaderStage::Vertex});*/
+
+        std::vector<std::filesystem::path> shaders{"shader.vert", "shader.frag"};
+        std::vector<Shader::VertexInput> input {Shader::VertexInput({Vertex2D::GetBinding()}, Vertex2D::GetAttributes())};
+        _Pipeline = CreateRef<GraphicsPipeline>(shaders, _Renderpass, input);
 
         descriptorSets.resize(imageCount);
         _Pipeline->AllocateDescriptorSets(descriptorSets.data(), layout);
@@ -118,11 +123,11 @@ namespace Magma
             auto cmd = new (&_CommandBuffers[i]) CommandBuffer();
 
             cmd->Begin();
-            cmd->BeginRenderpass(_Renderpass, (*_Framebuffers)[i]);
+            cmd->BeginRenderpass(_Renderpass, (*_Framebuffers)[i], {.color{0.0f, 0.0f, 0.0f, 1.0f}});
             cmd->BindPipeline(_Pipeline);
 
             VkDeviceSize offsets[] = {0};
-            cmd->BindVertexBuffer(_VertexBuffer, offsets);
+            cmd->BindVertexBuffer(_VertexBuffer, 0);
             cmd->BindIndexBuffer(_IndexBuffer, VK_INDEX_TYPE_UINT16);
 
             vkCmdBindDescriptorSets(cmd->GetCommandBuffer(),

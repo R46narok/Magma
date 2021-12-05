@@ -15,7 +15,7 @@
 
 namespace Magma
 {
-    class _Magma_Dll Framebuffers
+    class MAGMA_API Framebuffers
     {
     public:
         explicit Framebuffers(const Ref<Renderpass>& renderpass);

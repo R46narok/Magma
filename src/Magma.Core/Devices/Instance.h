@@ -12,7 +12,7 @@ _Magma_Define_VkHandle(VkInstance);
 
 namespace Magma
 {
-    class _Magma_Dll Instance
+    class MAGMA_API Instance
     {
     public:
         /// Checks the system for extension support, creates a Vulkan Instance,

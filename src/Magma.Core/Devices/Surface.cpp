@@ -4,6 +4,7 @@
 
 #include "Magma.Core/Engine/Log.h"
 #include "Magma.Core/Graphics/Graphics.h"
+#include "Magma.Core/Window.h"
 
 #define VK_USE_PLATFORM_WIN32_KHR
 #define GLFW_INCLUDE_VULKAN
@@ -20,8 +21,7 @@ namespace Magma
     {
         auto instance = Graphics::GetInstance()->GetVulkanInstance();
         auto window = Window::Get();
-        auto result = glfwCreateWindowSurface(instance, window->GetWindow(), nullptr, &_Surface);
-        _Magma_Assert(result == VK_SUCCESS, _Magma_Core_Error("Could not create window surface"));
+        Graphics::CheckVk(glfwCreateWindowSurface(instance, window->GetWindow(), nullptr, &_Surface));
     }
 
     Surface::~Surface() noexcept

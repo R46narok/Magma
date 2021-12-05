@@ -4,6 +4,7 @@
 
 #include "Magma.Core/Graphics/Descriptors/DescriptorSet.h"
 #include "Magma.Core/Graphics/Graphics.h"
+
 #include "Magma.Core/Graphics/Buffers/UniformBuffer.h"
 
 #include <vector>
@@ -20,20 +21,6 @@ namespace Magma
         return (VkDescriptorType)0;
     }
 
-    constexpr VkShaderStageFlagBits ShaderTypeToVkShaderStage(ShaderStage stage)
-    {
-        switch (stage)
-        {
-            case ShaderStage::Vertex: return VK_SHADER_STAGE_VERTEX_BIT;
-            case ShaderStage::Tesselation: return VK_SHADER_STAGE_TESSELLATION_CONTROL_BIT; //TODO:
-            case ShaderStage::Geometry: return VK_SHADER_STAGE_GEOMETRY_BIT;
-            case ShaderStage::Fragment: return VK_SHADER_STAGE_FRAGMENT_BIT;
-            case ShaderStage::Compute: return VK_SHADER_STAGE_COMPUTE_BIT;
-            case ShaderStage::All: return VK_SHADER_STAGE_ALL;
-        }
-
-        return (VkShaderStageFlagBits)0;
-    }
 
     DescriptorSetLayout::DescriptorSetLayout(const std::initializer_list<DescriptorSetBinding> &bindings)
         : _Layout(VK_NULL_HANDLE)

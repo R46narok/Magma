@@ -14,7 +14,10 @@
 # EXTERNAL cache entries
 ########################
 
-//Build shared libraries
+//Build external dependencies in /External
+BUILD_EXTERNAL:BOOL=ON
+
+//Build Shared Libraries
 BUILD_SHARED_LIBS:BOOL=OFF
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
@@ -267,8 +270,59 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Dot tool for use with Doxygen
+DOXYGEN_DOT_EXECUTABLE:FILEPATH=DOXYGEN_DOT_EXECUTABLE-NOTFOUND
+
 //Doxygen documentation generation tool (http://www.doxygen.org)
 DOXYGEN_EXECUTABLE:FILEPATH=D:/Development/Software/Doxygen/bin/doxygen.exe
+
+//Enables testing
+ENABLE_CTEST:BOOL=ON
+
+//If using Emscripten, builds to run on Node instead of Web
+ENABLE_EMSCRIPTEN_ENVIRONMENT_NODE:BOOL=OFF
+
+//If using Emscripten, enables SINGLE_FILE build
+ENABLE_EMSCRIPTEN_SINGLE_FILE:BOOL=OFF
+
+//Reduces glslang to minimum needed for web use
+ENABLE_GLSLANG_WEB:BOOL=OFF
+
+//For ENABLE_GLSLANG_WEB builds, enables compilation error messages
+ENABLE_GLSLANG_WEB_DEVEL:BOOL=OFF
+
+//Enables HLSL input support
+ENABLE_HLSL:BOOL=OFF
+
+//Enables Precompiled header
+ENABLE_PCH:BOOL=ON
+
+//Directory under which to collect all populated content
+FETCHCONTENT_BASE_DIR:PATH=D:/Development/Projects/Magma/cmake-build-debug/_deps
+
+//Disables all attempts to download or update content and assumes
+// source dirs already exist
+FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
+
+//Enables QUIET option for all content population
+FETCHCONTENT_QUIET:BOOL=ON
+
+//When not empty, overrides where to find pre-populated content
+// for glslang
+FETCHCONTENT_SOURCE_DIR_GLSLANG:PATH=
+
+//When not empty, overrides where to find pre-populated content
+// for physfs
+FETCHCONTENT_SOURCE_DIR_PHYSFS:PATH=
+
+//Enables UPDATE_DISCONNECTED behavior for all content population
+FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of glslang
+FETCHCONTENT_UPDATES_DISCONNECTED_GLSLANG:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of physfs
+FETCHCONTENT_UPDATES_DISCONNECTED_PHYSFS:BOOL=OFF
 
 //Value Computed by CMake
 GLFW_BINARY_DIR:STATIC=D:/Development/Projects/Magma/cmake-build-debug/submodules/glfw
@@ -295,11 +349,68 @@ GLFW_SOURCE_DIR:STATIC=D:/Development/Projects/Magma/submodules/glfw
 //Force use of high-performance GPU on hybrid systems
 GLFW_USE_HYBRID_HPG:BOOL=OFF
 
+//Specify VC++ CRT to use for Debug configurations.
+LLVM_USE_CRT_DEBUG:STRING=
+
 //Value Computed by CMake
 Magma_BINARY_DIR:STATIC=D:/Development/Projects/Magma/cmake-build-debug
 
 //Value Computed by CMake
 Magma_SOURCE_DIR:STATIC=D:/Development/Projects/Magma
+
+//Enable 7zip support
+PHYSFS_ARCHIVE_7Z:BOOL=ON
+
+//Enable Build Engine GRP support
+PHYSFS_ARCHIVE_GRP:BOOL=ON
+
+//Enable Descent I/II HOG support
+PHYSFS_ARCHIVE_HOG:BOOL=ON
+
+//Enable ISO9660 support
+PHYSFS_ARCHIVE_ISO9660:BOOL=ON
+
+//Enable Descent I/II MVL support
+PHYSFS_ARCHIVE_MVL:BOOL=ON
+
+//Enable Quake I/II QPAK support
+PHYSFS_ARCHIVE_QPAK:BOOL=ON
+
+//Enable I-War / Independence War SLB support
+PHYSFS_ARCHIVE_SLB:BOOL=ON
+
+//Enable Gothic I/II VDF archive support
+PHYSFS_ARCHIVE_VDF:BOOL=ON
+
+//Enable Doom WAD support
+PHYSFS_ARCHIVE_WAD:BOOL=ON
+
+//Enable ZIP support
+PHYSFS_ARCHIVE_ZIP:BOOL=ON
+
+//Build doxygen based documentation
+PHYSFS_BUILD_DOCS:BOOL=ON
+
+//Path to a file.
+PHYSFS_INCLUDE_DIR:PATH=PHYSFS_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+PHYSFS_LIBRARY:FILEPATH=PHYSFS_LIBRARY-NOTFOUND
+
+//Path to a program.
+PYTHON_EXECUTABLE:FILEPATH=C:/Users/Acer/AppData/Local/Programs/Python/Python35/python3.5.exe
+
+//Value Computed by CMake
+PhysFS++_BINARY_DIR:STATIC=D:/Development/Projects/Magma/cmake-build-debug/submodules/physfs-cpp
+
+//Value Computed by CMake
+PhysFS++_SOURCE_DIR:STATIC=D:/Development/Projects/Magma/submodules/physfs-cpp
+
+//Value Computed by CMake
+PhysicsFS_BINARY_DIR:STATIC=D:/Development/Projects/Magma/cmake-build-debug/submodules/physfs
+
+//Value Computed by CMake
+PhysicsFS_SOURCE_DIR:STATIC=D:/Development/Projects/Magma/submodules/physfs
 
 //Build benchmarks (Requires https://github.com/google/benchmark.git
 // to be installed)
@@ -352,6 +463,12 @@ SPDLOG_WCHAR_FILENAMES:BOOL=OFF
 //Support wchar api
 SPDLOG_WCHAR_SUPPORT:BOOL=OFF
 
+//Dependencies for the target
+SPIRV_LIB_DEPENDS:STATIC=general;glslang;
+
+//Use ccache
+USE_CCACHE:BOOL=OFF
+
 //Use MSVC runtime library DLL
 USE_MSVC_RUNTIME_LIBRARY_DLL:BOOL=ON
 
@@ -368,6 +485,21 @@ glm_BINARY_DIR:STATIC=D:/Development/Projects/Magma/cmake-build-debug/submodules
 glm_SOURCE_DIR:STATIC=D:/Development/Projects/Magma/submodules/glm
 
 //Value Computed by CMake
+glslang_BINARY_DIR:STATIC=D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build
+
+//The directory containing a CMake configuration file for glslang.
+glslang_DIR:PATH=glslang_DIR-NOTFOUND
+
+//Dependencies for the target
+glslang_LIB_DEPENDS:STATIC=general;OGLCompiler;general;OSDependent;
+
+//Value Computed by CMake
+glslang_SOURCE_DIR:STATIC=D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src
+
+//Dependencies for the target
+physfs++_LIB_DEPENDS:STATIC=general;physfs;
+
+//Value Computed by CMake
 spdlog_BINARY_DIR:STATIC=D:/Development/Projects/Magma/cmake-build-debug/submodules/spdlog
 
 //Value Computed by CMake
@@ -378,6 +510,8 @@ spdlog_SOURCE_DIR:STATIC=D:/Development/Projects/Magma/submodules/spdlog
 # INTERNAL cache entries
 ########################
 
+//Build the testing tree.
+BUILD_TESTING:INTERNAL=OFF
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=d:/Development/Projects/Magma/cmake-build-debug
 //Major version of cmake used to create the current loaded cache
@@ -502,7 +636,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RC_COMPILER
@@ -546,10 +680,22 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: DOXYGEN_DOT_EXECUTABLE
+DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_EXECUTABLE
 DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
+ENABLE_AMD_EXTENSIONS:INTERNAL=OFF
+//Builds glslangValidator and spirv-remap
+ENABLE_GLSLANG_BINARIES:INTERNAL=OFF
+ENABLE_NV_EXTENSIONS:INTERNAL=OFF
+//Enables spirv-opt capability if present
+ENABLE_OPT:INTERNAL=ON
+//Enables building of SPVRemapper
+ENABLE_SPVREMAPPER:INTERNAL=OFF
 //Details about finding Doxygen
-FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[D:/Development/Software/Doxygen/bin/doxygen.exe][cfound components: doxygen ][v1.9.0 (71777ff3973331bd9453870593a762e184ba9f78)()]
+FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[D:/Development/Software/Doxygen/bin/doxygen.exe][cfound components: doxygen missing components: dot][v1.9.0 (71777ff3973331bd9453870593a762e184ba9f78)()]
+//Details about finding PythonInterp
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[C:/Users/Acer/AppData/Local/Programs/Python/Python35/python3.5.exe][v3.5(3)]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding Vulkan
@@ -558,6 +704,26 @@ FIND_PACKAGE_MESSAGE_DETAILS_Vulkan:INTERNAL=[D:/Development/VulkanSDK/1.2.135.0
 GLFW_PKG_CONFIG_LIBS_PRIVATE:INTERNAL= -lgdi32
 //GLFW pkg-config Requires.private
 GLFW_PKG_CONFIG_REQUIRES_PRIVATE:INTERNAL=
+//STRINGS property for variable: LLVM_USE_CRT_DEBUG
+LLVM_USE_CRT_DEBUG-STRINGS:INTERNAL=MD;MDd;MT;MTd
+//Build shared library
+PHYSFS_BUILD_SHARED:INTERNAL=OFF
+//Build static library
+PHYSFS_BUILD_STATIC:INTERNAL=NOTOFF
+//ADVANCED property for variable: PHYSFS_BUILD_TEST
+PHYSFS_BUILD_TEST-ADVANCED:INTERNAL=1
+//Build stdio test program.
+PHYSFS_BUILD_TEST:INTERNAL=OFF
+//STRING
+PHYSFS_TARGETNAME_DIST:INTERNAL=physfs-dist
+//STRING
+PHYSFS_TARGETNAME_DOCS:INTERNAL=physfs-docs
+//STRING
+PHYSFS_TARGETNAME_UNINSTALL:INTERNAL=physfs-uninstall
+//ADVANCED property for variable: PYTHON_EXECUTABLE
+PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
+//Skip installation
+SKIP_GLSLANG_INSTALL:INTERNAL=ON
 //ADVANCED property for variable: Vulkan_INCLUDE_DIR
 Vulkan_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Vulkan_LIBRARY

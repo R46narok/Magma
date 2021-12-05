@@ -5,6 +5,7 @@
 #include "Magma.Core/Debug/ValidationLayers.h"
 #include "Magma.Core/Devices/Ext.h"
 #include "Magma.Core/Engine/Log.h"
+#include "Magma.Core/Graphics/Graphics.h"
 
 #include <vulkan/vulkan.h>
 #include <vector>
@@ -84,8 +85,7 @@ namespace Magma
         VkDebugUtilsMessengerCreateInfoEXT createInfo;
         PopulateDebugMessengerCreateInfo(createInfo);
 
-        auto result = CreateDebugUtilsMessengerEXT(instance, &createInfo, nullptr, &DebugMessenger);
-        _Magma_Assert(result == VK_SUCCESS, _Magma_Core_Error("Could not create VkDebugUtilsMessengerEXT"));
+        Graphics::CheckVk(CreateDebugUtilsMessengerEXT(instance, &createInfo, nullptr, &DebugMessenger));
     }
 
     void DestroyDebugUtilsMessenger(VkInstance instance)

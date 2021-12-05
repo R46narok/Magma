@@ -9,7 +9,7 @@
 
 namespace Magma
 {
-    class _Magma_Dll UniformBuffer : public Buffer
+    class MAGMA_API UniformBuffer : public Buffer
     {
     public:
         explicit UniformBuffer(uint32_t size);

@@ -10,7 +10,8 @@ namespace Magma
 {
     //TODO: Create multiple buffers func
     CommandBuffer::CommandBuffer()
-        : _Pool(Graphics::GetCommandPool())
+        : _Pool(Graphics::GetCommandPool()),
+          _Buffer(VK_NULL_HANDLE)
     {
         VkCommandBufferAllocateInfo allocInfo{
           .sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO,
@@ -20,8 +21,7 @@ namespace Magma
         };
 
         auto device = Graphics::GetDevice()->GetVulkanDevice();
-        auto result = vkAllocateCommandBuffers(device, &allocInfo, &_Buffer);
-        _Magma_VkAssert(result, _Magma_Core_Error("Could not allocate command buffer"));
+        Graphics::CheckVk(vkAllocateCommandBuffers(device, &allocInfo, &_Buffer));
     }
 
     CommandBuffer::~CommandBuffer()
@@ -35,14 +35,12 @@ namespace Magma
           .pInheritanceInfo = nullptr
         };
 
-        auto result = vkBeginCommandBuffer(_Buffer, &beginInfo);
-        _Magma_VkAssert(result, _Magma_Core_Error("Could not begin command buffer"));
+        Graphics::CheckVk(vkBeginCommandBuffer(_Buffer, &beginInfo));
     }
 
     void CommandBuffer::End()
     {
-        auto result = vkEndCommandBuffer(_Buffer);
-        _Magma_VkAssert(result, _Magma_Core_Error("Could not end command buffer"));
+        Graphics::CheckVk(vkEndCommandBuffer(_Buffer));
     }
 
     void CommandBuffer::CopyBuffer(VkBuffer src, VkBuffer dst, uint32_t regionCount, VkBufferCopy *pCopyRegions)
@@ -55,11 +53,9 @@ namespace Magma
         vkCmdBindPipeline(_Buffer, VK_PIPELINE_BIND_POINT_GRAPHICS, pipeline->GetPipeline());
     }
 
-    void CommandBuffer::BeginRenderpass(const Ref<Renderpass> &renderpass, VkFramebuffer framebuffer)
+    void CommandBuffer::BeginRenderpass(const Ref<Renderpass> &renderpass, VkFramebuffer framebuffer, VkClearValue clear)
     {
         auto extent = Graphics::GetSwapchain()->GetExtent2D();
-
-        VkClearValue clearColor = {{{0.0f, 0.0f, 0.0f, 1.0f}}};
 
         VkRenderPassBeginInfo info{
                 .sType = VK_STRUCTURE_TYPE_RENDER_PASS_BEGIN_INFO,
@@ -67,7 +63,7 @@ namespace Magma
                 .framebuffer = framebuffer,
                 .renderArea = {.offset = {0, 0}, .extent = extent},
                 .clearValueCount = 1,
-                .pClearValues = &clearColor
+                .pClearValues = &clear
         };
 
         vkCmdBeginRenderPass(_Buffer, &info, VK_SUBPASS_CONTENTS_INLINE);
@@ -78,9 +74,9 @@ namespace Magma
         vkCmdEndRenderPass(_Buffer);
     }
 
-    void CommandBuffer::BindVertexBuffer(const Ref<Buffer> &buffer, VkDeviceSize *pOffset)
+    void CommandBuffer::BindVertexBuffer(const Ref<Buffer> &buffer, VkDeviceSize offset)
     {
-        vkCmdBindVertexBuffers(_Buffer, 0, 1, &buffer->GetBuffer(), pOffset);
+        vkCmdBindVertexBuffers(_Buffer, 0, 1, &buffer->GetBuffer(), &offset);
     }
 
     void CommandBuffer::BindIndexBuffer(const Ref<Buffer> &buffer, VkIndexType indexType, uint32_t offset)

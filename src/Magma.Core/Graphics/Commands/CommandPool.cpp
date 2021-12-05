@@ -4,8 +4,6 @@
 
 #include "Magma.Core/Graphics/Commands/CommandPool.h"
 #include "Magma.Core/Graphics/Graphics.h"
-#include "Magma.Core/Devices/QueueFamilies.h"
-#include "Magma.Core/Engine/Log.h"
 
 namespace Magma
 {
@@ -19,8 +17,7 @@ namespace Magma
             .queueFamilyIndex = indices.GraphicsFamily.value()
         };
 
-        auto result = vkCreateCommandPool(device->GetVulkanDevice(), &createInfo, nullptr, &_CommandPool);
-        _Magma_VkAssert(result, _Magma_Core_Error("Could not create command pool"));
+        Graphics::CheckVk(vkCreateCommandPool(device->GetVulkanDevice(), &createInfo, nullptr, &_CommandPool));
     }
 
     CommandPool::~CommandPool()

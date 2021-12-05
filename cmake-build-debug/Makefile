@@ -226,6 +226,84 @@ spdlog\fast:
 	$(MAKE) $(MAKESILENT) -f submodules\spdlog\CMakeFiles\spdlog.dir\build.make /nologo -$(MAKEFLAGS) submodules\spdlog\CMakeFiles\spdlog.dir\build
 .PHONY : spdlog\fast
 
+#=============================================================================
+# Target rules for targets named physfs-static
+
+# Build rule for target.
+physfs-static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) physfs-static
+.PHONY : physfs-static
+
+# fast build rule for target.
+physfs-static\fast:
+	$(MAKE) $(MAKESILENT) -f submodules\physfs\CMakeFiles\physfs-static.dir\build.make /nologo -$(MAKEFLAGS) submodules\physfs\CMakeFiles\physfs-static.dir\build
+.PHONY : physfs-static\fast
+
+#=============================================================================
+# Target rules for targets named physfs-docs
+
+# Build rule for target.
+physfs-docs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) physfs-docs
+.PHONY : physfs-docs
+
+# fast build rule for target.
+physfs-docs\fast:
+	$(MAKE) $(MAKESILENT) -f submodules\physfs\CMakeFiles\physfs-docs.dir\build.make /nologo -$(MAKEFLAGS) submodules\physfs\CMakeFiles\physfs-docs.dir\build
+.PHONY : physfs-docs\fast
+
+#=============================================================================
+# Target rules for targets named glslang
+
+# Build rule for target.
+glslang: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) glslang
+.PHONY : glslang
+
+# fast build rule for target.
+glslang\fast:
+	$(MAKE) $(MAKESILENT) -f _deps\glslang-build\glslang\CMakeFiles\glslang.dir\build.make /nologo -$(MAKEFLAGS) _deps\glslang-build\glslang\CMakeFiles\glslang.dir\build
+.PHONY : glslang\fast
+
+#=============================================================================
+# Target rules for targets named OSDependent
+
+# Build rule for target.
+OSDependent: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) OSDependent
+.PHONY : OSDependent
+
+# fast build rule for target.
+OSDependent\fast:
+	$(MAKE) $(MAKESILENT) -f _deps\glslang-build\glslang\OSDependent\Windows\CMakeFiles\OSDependent.dir\build.make /nologo -$(MAKEFLAGS) _deps\glslang-build\glslang\OSDependent\Windows\CMakeFiles\OSDependent.dir\build
+.PHONY : OSDependent\fast
+
+#=============================================================================
+# Target rules for targets named OGLCompiler
+
+# Build rule for target.
+OGLCompiler: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) OGLCompiler
+.PHONY : OGLCompiler
+
+# fast build rule for target.
+OGLCompiler\fast:
+	$(MAKE) $(MAKESILENT) -f _deps\glslang-build\OGLCompilersDLL\CMakeFiles\OGLCompiler.dir\build.make /nologo -$(MAKEFLAGS) _deps\glslang-build\OGLCompilersDLL\CMakeFiles\OGLCompiler.dir\build
+.PHONY : OGLCompiler\fast
+
+#=============================================================================
+# Target rules for targets named SPIRV
+
+# Build rule for target.
+SPIRV: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) SPIRV
+.PHONY : SPIRV
+
+# fast build rule for target.
+SPIRV\fast:
+	$(MAKE) $(MAKESILENT) -f _deps\glslang-build\SPIRV\CMakeFiles\SPIRV.dir\build.make /nologo -$(MAKEFLAGS) _deps\glslang-build\SPIRV\CMakeFiles\SPIRV.dir\build
+.PHONY : SPIRV\fast
+
 src\Magma.Client\EntryPoint.obj: src\Magma.Client\EntryPoint.cpp.obj
 
 .PHONY : src\Magma.Client\EntryPoint.obj
@@ -877,6 +955,33 @@ src\Magma.Core\Graphics\Renderpass\Swapchain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Magma.Core.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Magma.Core.dir\src\Magma.Core\Graphics\Renderpass\Swapchain.cpp.s
 .PHONY : src\Magma.Core\Graphics\Renderpass\Swapchain.cpp.s
 
+src\Magma.Core\Utils\String.obj: src\Magma.Core\Utils\String.cpp.obj
+
+.PHONY : src\Magma.Core\Utils\String.obj
+
+# target to build an object file
+src\Magma.Core\Utils\String.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Magma.Core.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Magma.Core.dir\src\Magma.Core\Utils\String.cpp.obj
+.PHONY : src\Magma.Core\Utils\String.cpp.obj
+
+src\Magma.Core\Utils\String.i: src\Magma.Core\Utils\String.cpp.i
+
+.PHONY : src\Magma.Core\Utils\String.i
+
+# target to preprocess a source file
+src\Magma.Core\Utils\String.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Magma.Core.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Magma.Core.dir\src\Magma.Core\Utils\String.cpp.i
+.PHONY : src\Magma.Core\Utils\String.cpp.i
+
+src\Magma.Core\Utils\String.s: src\Magma.Core\Utils\String.cpp.s
+
+.PHONY : src\Magma.Core\Utils\String.s
+
+# target to generate assembly for a file
+src\Magma.Core\Utils\String.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Magma.Core.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Magma.Core.dir\src\Magma.Core\Utils\String.cpp.s
+.PHONY : src\Magma.Core\Utils\String.cpp.s
+
 src\Magma.Core\Window.obj: src\Magma.Core\Window.cpp.obj
 
 .PHONY : src\Magma.Core\Window.obj
@@ -915,11 +1020,17 @@ help:
 	@echo ... install/local
 	@echo ... list_install_components
 	@echo ... rebuild_cache
+	@echo ... physfs-docs
 	@echo ... uninstall
 	@echo ... update_mappings
 	@echo ... Magma.Client
 	@echo ... Magma.Core
+	@echo ... OGLCompiler
+	@echo ... OSDependent
+	@echo ... SPIRV
 	@echo ... glfw
+	@echo ... glslang
+	@echo ... physfs-static
 	@echo ... spdlog
 	@echo ... src/Magma.Client/EntryPoint.obj
 	@echo ... src/Magma.Client/EntryPoint.i
@@ -993,6 +1104,9 @@ help:
 	@echo ... src/Magma.Core/Graphics/Renderpass/Swapchain.obj
 	@echo ... src/Magma.Core/Graphics/Renderpass/Swapchain.i
 	@echo ... src/Magma.Core/Graphics/Renderpass/Swapchain.s
+	@echo ... src/Magma.Core/Utils/String.obj
+	@echo ... src/Magma.Core/Utils/String.i
+	@echo ... src/Magma.Core/Utils/String.s
 	@echo ... src/Magma.Core/Window.obj
 	@echo ... src/Magma.Core/Window.i
 	@echo ... src/Magma.Core/Window.s

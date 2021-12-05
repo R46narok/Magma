@@ -14,7 +14,7 @@
 
 namespace Magma
 {
-    class _Magma_Dll LogicalDevice
+    class MAGMA_API LogicalDevice
     {
         friend class Graphics;
     public:

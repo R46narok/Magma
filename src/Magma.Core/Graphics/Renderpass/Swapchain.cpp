@@ -90,8 +90,7 @@ namespace Magma
             createInfo.pQueueFamilyIndices = nullptr;
         }
 
-        auto result = vkCreateSwapchainKHR(device, &createInfo, nullptr, &_Swapchain);
-        _Magma_Assert(result == VK_SUCCESS, _Magma_Core_Error("Could not create the swapchain"));
+        Graphics::CheckVk(vkCreateSwapchainKHR(device, &createInfo, nullptr, &_Swapchain));
         _Magma_Core_Info("Swapchain created");
 
         vkGetSwapchainImagesKHR(device, _Swapchain, &iImageCount, nullptr);
@@ -178,8 +177,7 @@ namespace Magma
             };
 
             auto device = Graphics::GetDevice()->GetVulkanDevice();
-            auto result = vkCreateImageView(device, &createInfo, nullptr, &_ImageViews[i]);
-            _Magma_Assert(result == VK_SUCCESS, _Magma_Core_Error("Could not create VkImageView"));
+            Graphics::CheckVk(vkCreateImageView(device, &createInfo, nullptr, &_ImageViews[i]));
         }
     }
 }

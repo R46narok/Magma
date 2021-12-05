@@ -12,9 +12,9 @@
 
 namespace Magma
 {
-    _Magma_Dll void InitializeLog();
-    _Magma_Dll Ref<spdlog::logger> GetCoreLogger();
-    _Magma_Dll Ref<spdlog::logger> GetClientLogger();
+    MAGMA_API void InitializeLog();
+    MAGMA_API Ref<spdlog::logger> GetCoreLogger();
+    MAGMA_API Ref<spdlog::logger> GetClientLogger();
 }
 
 #define _Magma_Core_Trace(...)    ::Magma::GetCoreLogger()->trace(__VA_ARGS__)

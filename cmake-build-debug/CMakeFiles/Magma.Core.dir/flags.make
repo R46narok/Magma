@@ -6,5 +6,5 @@ CXX_FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd   -std:c++lates
 
 CXX_DEFINES = -DMagma_Core_EXPORTS -DSPDLOG_COMPILED_LIB -D_Magma_Core
 
-CXX_INCLUDES = -ID:\Development\Projects\Magma\submodules\spdlog\include -ID:\Development\Projects\Magma\src -ID:\Development\Projects\Magma\submodules\glfw\include -ID:\Development\Projects\Magma\submodules\glm -ID:\Development\VulkanSDK\1.2.135.0\Include 
+CXX_INCLUDES = -ID:\Development\Projects\Magma\submodules\spdlog\include -ID:\Development\Projects\Magma\src -ID:\Development\Projects\Magma\submodules\glfw\include -ID:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-src\SPIRV\.. -ID:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-src\glslang\.. -ID:\Development\Projects\Magma\submodules\glm -ID:\Development\VulkanSDK\1.2.135.0\Include 
 

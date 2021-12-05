@@ -20,7 +20,7 @@ namespace Magma
             VK_KHR_SWAPCHAIN_EXTENSION_NAME
     };
 
-    class _Magma_Dll PhysicalDevice
+    class MAGMA_API PhysicalDevice
     {
     public:
         /// Chooses the best graphics card with Vulkan support in the system.

@@ -1,3 +1,4 @@
 # Hashes of file build rules.
 dce68ccc08829170e8b5c167187162f0 submodules/glfw/CMakeFiles/uninstall
 f3dec184bc1151f00b5155dc25c04ad7 submodules/glfw/src/CMakeFiles/update_mappings
+19e2f34ad5bc2e2969f340450b43d142 submodules/physfs/CMakeFiles/physfs-docs

@@ -5,7 +5,7 @@
 		<Option title="Magma"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="msvc8"/>
-		<Option virtualFolders="CMake Files\;CMake Files\submodules\;CMake Files\submodules\glfw\;CMake Files\submodules\glfw\CMake\;CMake Files\submodules\glfw\src\;CMake Files\submodules\spdlog\;CMake Files\submodules\spdlog\cmake\;CMake Files\submodules\glm\;CMake Files\submodules\glm\glm\;CMake Files\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\submodules\;CMake Files\submodules\glfw\;CMake Files\submodules\glfw\CMake\;CMake Files\submodules\glfw\src\;CMake Files\submodules\spdlog\;CMake Files\submodules\spdlog\cmake\;CMake Files\submodules\glm\;CMake Files\submodules\glm\glm\;CMake Files\submodules\physfs\;CMake Files\submodules\physfs\docs\;CMake Files\cmake\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\_deps\;CMake Files\cmake-build-debug\_deps\glslang-src\;CMake Files\cmake-build-debug\_deps\glslang-src\External\;CMake Files\cmake-build-debug\_deps\glslang-src\glslang\;CMake Files\cmake-build-debug\_deps\glslang-src\glslang\OSDependent\;CMake Files\cmake-build-debug\_deps\glslang-src\glslang\OSDependent\Windows\;CMake Files\cmake-build-debug\_deps\glslang-src\OGLCompilersDLL\;CMake Files\cmake-build-debug\_deps\glslang-src\SPIRV\;CMake Files\cmake-build-debug\_deps\glslang-src\gtests\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="D:/Development/Projects/Magma/cmake-build-debug"/>
@@ -29,6 +29,8 @@
 					<Add directory="D:/Development/Projects/Magma/submodules/spdlog/include"/>
 					<Add directory="D:/Development/Projects/Magma/src"/>
 					<Add directory="D:/Development/Projects/Magma/submodules/glfw/include"/>
+					<Add directory="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/.."/>
+					<Add directory="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/.."/>
 					<Add directory="D:/Development/Projects/Magma/submodules/glm"/>
 					<Add directory="D:/Development/VulkanSDK/1.2.135.0/Include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
@@ -58,6 +60,8 @@
 					<Add directory="D:/Development/Projects/Magma/submodules/spdlog/include"/>
 					<Add directory="D:/Development/Projects/Magma/src"/>
 					<Add directory="D:/Development/Projects/Magma/submodules/glfw/include"/>
+					<Add directory="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/.."/>
+					<Add directory="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/.."/>
 					<Add directory="D:/Development/Projects/Magma/submodules/glm"/>
 					<Add directory="D:/Development/VulkanSDK/1.2.135.0/Include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
@@ -87,6 +91,8 @@
 					<Add directory="D:/Development/Projects/Magma/submodules/spdlog/include"/>
 					<Add directory="D:/Development/Projects/Magma/src"/>
 					<Add directory="D:/Development/Projects/Magma/submodules/glfw/include"/>
+					<Add directory="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/.."/>
+					<Add directory="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/.."/>
 					<Add directory="D:/Development/Projects/Magma/submodules/glm"/>
 					<Add directory="D:/Development/VulkanSDK/1.2.135.0/Include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
@@ -116,6 +122,8 @@
 					<Add directory="D:/Development/Projects/Magma/submodules/spdlog/include"/>
 					<Add directory="D:/Development/Projects/Magma/src"/>
 					<Add directory="D:/Development/Projects/Magma/submodules/glfw/include"/>
+					<Add directory="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/.."/>
+					<Add directory="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/.."/>
 					<Add directory="D:/Development/Projects/Magma/submodules/glm"/>
 					<Add directory="D:/Development/VulkanSDK/1.2.135.0/Include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
@@ -309,7 +317,528 @@
 					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\submodules\spdlog\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="physfs-static">
+				<Option output="D:/Development/Projects/Magma/cmake-build-debug/submodules/physfs/physfs-static.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/Magma/cmake-build-debug/submodules/physfs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Development/Projects/Magma/submodules/physfs/./src"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\submodules\physfs\Makefile VERBOSE=1 physfs-static"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\submodules\physfs\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\submodules\physfs\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\submodules\physfs\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="physfs-static/fast">
+				<Option output="D:/Development/Projects/Magma/cmake-build-debug/submodules/physfs/physfs-static.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/Magma/cmake-build-debug/submodules/physfs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Development/Projects/Magma/submodules/physfs/./src"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\submodules\physfs\Makefile VERBOSE=1 physfs-static/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\submodules\physfs\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\submodules\physfs\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\submodules\physfs\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="physfs-docs">
+				<Option working_dir="D:/Development/Projects/Magma/cmake-build-debug/submodules/physfs"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\submodules\physfs\Makefile VERBOSE=1 physfs-docs"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\submodules\physfs\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\submodules\physfs\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\submodules\physfs\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glslang">
+				<Option output="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/glslang/glslangd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/glslang"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DGLSLANG_OSINCLUDE_WIN32"/>
+					<Add option="-DENABLE_OPT=0"/>
+					<Add directory="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/.."/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\glslang\Makefile VERBOSE=1 glslang"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\glslang\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\glslang\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\glslang\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glslang/fast">
+				<Option output="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/glslang/glslangd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/glslang"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DGLSLANG_OSINCLUDE_WIN32"/>
+					<Add option="-DENABLE_OPT=0"/>
+					<Add directory="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/.."/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\glslang\Makefile VERBOSE=1 glslang/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\glslang\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\glslang\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\glslang\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OSDependent">
+				<Option output="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/glslang/OSDependent/Windows/OSDependentd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/glslang/OSDependent/Windows"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DGLSLANG_OSINCLUDE_WIN32"/>
+					<Add option="-DENABLE_OPT=0"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\glslang\OSDependent\Windows\Makefile VERBOSE=1 OSDependent"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\glslang\OSDependent\Windows\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\glslang\OSDependent\Windows\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\glslang\OSDependent\Windows\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OSDependent/fast">
+				<Option output="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/glslang/OSDependent/Windows/OSDependentd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/glslang/OSDependent/Windows"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DGLSLANG_OSINCLUDE_WIN32"/>
+					<Add option="-DENABLE_OPT=0"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\glslang\OSDependent\Windows\Makefile VERBOSE=1 OSDependent/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\glslang\OSDependent\Windows\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\glslang\OSDependent\Windows\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\glslang\OSDependent\Windows\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OGLCompiler">
+				<Option output="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/OGLCompilersDLL/OGLCompilerd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/OGLCompilersDLL"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DGLSLANG_OSINCLUDE_WIN32"/>
+					<Add option="-DENABLE_OPT=0"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\OGLCompilersDLL\Makefile VERBOSE=1 OGLCompiler"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\OGLCompilersDLL\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\OGLCompilersDLL\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\OGLCompilersDLL\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OGLCompiler/fast">
+				<Option output="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/OGLCompilersDLL/OGLCompilerd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/OGLCompilersDLL"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DGLSLANG_OSINCLUDE_WIN32"/>
+					<Add option="-DENABLE_OPT=0"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\OGLCompilersDLL\Makefile VERBOSE=1 OGLCompiler/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\OGLCompilersDLL\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\OGLCompilersDLL\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\OGLCompilersDLL\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SPIRV">
+				<Option output="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/SPIRV/SPIRVd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/SPIRV"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DGLSLANG_OSINCLUDE_WIN32"/>
+					<Add option="-DENABLE_OPT=0"/>
+					<Add directory="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/.."/>
+					<Add directory="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/.."/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\SPIRV\Makefile VERBOSE=1 SPIRV"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\SPIRV\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\SPIRV\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\SPIRV\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SPIRV/fast">
+				<Option output="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/SPIRV/SPIRVd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/SPIRV"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DGLSLANG_OSINCLUDE_WIN32"/>
+					<Add option="-DENABLE_OPT=0"/>
+					<Add directory="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/.."/>
+					<Add directory="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/.."/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\SPIRV\Makefile VERBOSE=1 SPIRV/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\SPIRV\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\SPIRV\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Development\Projects\Magma\cmake-build-debug\_deps\glslang-build\SPIRV\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/OGLCompilersDLL/InitializeDll.cpp">
+			<Option target="OGLCompiler"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/OGLCompilersDLL/InitializeDll.h">
+			<Option target="OGLCompiler"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/GLSL.ext.AMD.h">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/GLSL.ext.EXT.h">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/GLSL.ext.KHR.h">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/GLSL.ext.NV.h">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/GLSL.std.450.h">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/GlslangToSpv.cpp">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/GlslangToSpv.h">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/InReadableOrder.cpp">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/Logger.cpp">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/Logger.h">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/SpvBuilder.cpp">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/SpvBuilder.h">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/SpvPostProcess.cpp">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/SpvTools.cpp">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/SpvTools.h">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/bitutils.h">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/disassemble.cpp">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/disassemble.h">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/doc.cpp">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/doc.h">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/hex_float.h">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/spirv.hpp">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/spvIR.h">
+			<Option target="SPIRV"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/GenericCodeGen/CodeGen.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/GenericCodeGen/Link.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/Include/BaseTypes.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/Include/Common.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/Include/ConstantUnion.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/Include/InfoSink.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/Include/InitializeGlobals.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/Include/PoolAlloc.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/Include/ResourceLimits.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/Include/ShHandle.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/Include/Types.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/Include/arrays.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/Include/intermediate.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/Include/revision.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/Constant.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/InfoSink.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/Initialize.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/Initialize.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/IntermTraverse.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/Intermediate.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/LiveTraverser.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/ParseContextBase.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/ParseHelper.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/ParseHelper.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/PoolAlloc.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/RemoveTree.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/RemoveTree.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/Scan.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/Scan.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/ScanContext.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/ShaderLang.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/SymbolTable.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/SymbolTable.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/Versions.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/Versions.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/attribute.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/attribute.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/gl_types.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/glslang.m4">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/glslang.y">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/glslang_tab.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/glslang_tab.cpp.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/intermOut.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/iomapper.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/iomapper.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/limits.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/linkValidate.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/localintermediate.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/parseConst.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/parseVersions.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/preprocessor/Pp.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/preprocessor/PpAtom.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/preprocessor/PpContext.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/preprocessor/PpContext.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/preprocessor/PpScanner.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/preprocessor/PpTokens.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/preprocessor/PpTokens.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/propagateNoContraction.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/propagateNoContraction.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/reflection.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/MachineIndependent/reflection.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/OSDependent/Windows/ossource.cpp">
+			<Option target="OSDependent"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/OSDependent/osinclude.h">
+			<Option target="OSDependent"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/Public/ShaderLang.h">
+			<Option target="glslang"/>
+		</Unit>
 		<Unit filename="D:/Development/Projects/Magma/src/Magma.Client/EntryPoint.cpp">
 			<Option target="Magma.Client"/>
 		</Unit>
@@ -456,6 +985,12 @@
 		<Unit filename="D:/Development/Projects/Magma/src/Magma.Core/Graphics/Renderpass/Swapchain.h">
 			<Option target="Magma.Core"/>
 		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/src/Magma.Core/Utils/String.cpp">
+			<Option target="Magma.Core"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/src/Magma.Core/Utils/String.h">
+			<Option target="Magma.Core"/>
+		</Unit>
 		<Unit filename="D:/Development/Projects/Magma/src/Magma.Core/Window.cpp">
 			<Option target="Magma.Core"/>
 		</Unit>
@@ -563,6 +1098,72 @@
 		</Unit>
 		<Unit filename="D:/Development/Projects/Magma/submodules/glfw/src/window.c">
 			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs.h">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_archiver_7z.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_archiver_dir.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_archiver_grp.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_archiver_hog.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_archiver_iso9660.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_archiver_mvl.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_archiver_qpak.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_archiver_slb.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_archiver_unpacked.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_archiver_vdf.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_archiver_wad.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_archiver_zip.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_byteorder.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_platform_android.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_platform_os2.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_platform_posix.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_platform_qnx.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_platform_unix.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_platform_windows.c">
+			<Option target="physfs-static"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/src/physfs_unicode.c">
+			<Option target="physfs-static"/>
 		</Unit>
 		<Unit filename="D:/Development/Projects/Magma/submodules/spdlog/include/spdlog/async.h">
 			<Option target="spdlog"/>
@@ -843,11 +1444,41 @@
 		<Unit filename="D:/Development/Projects/Magma/submodules/glm/glm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\submodules\glm\glm\"/>
 		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\submodules\physfs\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/docs/Doxyfile">
+			<Option virtualFolder="CMake Files\submodules\physfs\docs\"/>
+		</Unit>
 		<Unit filename="D:/Development/Projects/Magma/cmake/Ide.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
 		<Unit filename="D:/Development/Projects/Magma/cmake/Utils.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glslang-src\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/ChooseMSVCCRT.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glslang-src\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/External/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glslang-src\External\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glslang-src\glslang\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/OSDependent/Windows/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glslang-src\glslang\OSDependent\Windows\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/OGLCompilersDLL/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glslang-src\OGLCompilersDLL\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glslang-src\SPIRV\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/gtests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glslang-src\gtests\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

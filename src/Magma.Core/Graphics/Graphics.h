@@ -28,7 +28,7 @@
 namespace Magma
 {
 
-    class _Magma_Dll Graphics : public Module::Registrar<Graphics>
+    class MAGMA_API Graphics : public Module::Registrar<Graphics>
     {
     private:
         [[maybe_unused]] inline static const bool Registered = Register(Stage::Render, Requires<Window>());
@@ -39,6 +39,7 @@ namespace Magma
         void Update() override;
 
         static void CheckVk(VkResult result);
+        static std::string StringifyResultVk(VkResult result);
 
         static const Instance* GetInstance() noexcept { return moduleInstance->_Instance.get(); }
         static const Surface* GetSurface() noexcept { return moduleInstance->_Surface.get(); }
@@ -47,8 +48,6 @@ namespace Magma
         static const LogicalDevice* GetDevice() noexcept { return moduleInstance->_LogicalDevice.get(); }
         static const Swapchain* GetSwapchain() noexcept { return moduleInstance->_Swapchain.get(); }
     private:
-        void UpdateUniformBuffer(uint32_t currentImage);
-
         Ref<Instance> _Instance;
         Ref<Surface> _Surface;
         Ref<PhysicalDevice> _PhysicalDevice;

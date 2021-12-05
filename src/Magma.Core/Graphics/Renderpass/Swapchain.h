@@ -27,7 +27,7 @@ namespace Magma
 
     SwapchainSupportDetails QuerySwapchainSupport(VkPhysicalDevice device, VkSurfaceKHR surface);
 
-    class _Magma_Dll Swapchain
+    class MAGMA_API Swapchain
     {
     public:
         explicit Swapchain();

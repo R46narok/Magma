@@ -15,9 +15,13 @@
 
 namespace Magma
 {
-    class _Magma_Dll CommandPool
+    class MAGMA_API CommandPool
     {
     public:
+        /// Creates a Vulkan command pool on the graphics queue family TODO
+        /// \param physicalDevice A valid GPU to get the queue family index.
+        /// \param device A valid Vulkan device to create the pool on.
+        /// \param surface A valid surface to get the queue family index. TODO: Cache this stuff, no need to pass the physical device and surface here
         explicit CommandPool(const Ref<PhysicalDevice>& physicalDevice, const Ref<LogicalDevice>& device, const Ref<Surface>& surface);
         ~CommandPool();
 

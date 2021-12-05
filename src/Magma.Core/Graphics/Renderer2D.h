@@ -20,7 +20,7 @@ namespace Magma
 {
     class Graphics;
 
-    class _Magma_Dll Renderer2D
+    class MAGMA_API Renderer2D
     {
     public:
         Renderer2D();

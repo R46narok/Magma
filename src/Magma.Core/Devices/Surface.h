@@ -7,7 +7,7 @@
 
 #include "Magma.Core/Base.h"
 #include "Magma.Core/Types.h"
-#include "Magma.Core/Window.h"
+
 #include "Magma.Core/Devices/Instance.h"
 #include "QueueFamilies.h"
 
@@ -15,9 +15,10 @@
 
 namespace Magma
 {
-    class _Magma_Dll Surface
+    class MAGMA_API Surface
     {
     public:
+        /// Creates a surface from the Window instance
         explicit Surface();
         ~Surface() noexcept;
 

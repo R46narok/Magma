@@ -1,0 +1,6 @@
+[submodule "submodules/physfs-cpp"]
+	path = submodules/physfs-cpp
+	url = https://github.com/kahowell/physfs-cpp
+[submodule "submodules/physfs"]
+	path = submodules/physfs
+	url = https://github.com/icculus/physfs

@@ -42,10 +42,14 @@ namespace Magma
         createInfo.enabledExtensionCount = extensions.size();
         createInfo.ppEnabledExtensionNames = extensions.data();
 
-        if (Configuration::IsDebug && !layers.empty())
+        if (Configuration::IsDebug && CheckValidationLayerSupport())
         {
             createInfo.ppEnabledLayerNames = layers.data();
             createInfo.enabledLayerCount = static_cast<uint32_t>(layers.size());
+        }
+        else
+        {
+            _Magma_Core_Warn("Vulkan validation layers are not enabled");
         }
 
         Graphics::CheckVk(vkCreateInstance(&createInfo, nullptr, &_Instance));

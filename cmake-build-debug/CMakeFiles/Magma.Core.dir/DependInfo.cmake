@@ -27,6 +27,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Development/Projects/Magma/src/Magma.Core/Graphics/Renderpass/Framebuffer.cpp" "D:/Development/Projects/Magma/cmake-build-debug/CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Renderpass/Framebuffer.cpp.obj"
   "D:/Development/Projects/Magma/src/Magma.Core/Graphics/Renderpass/Renderpass.cpp" "D:/Development/Projects/Magma/cmake-build-debug/CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Renderpass/Renderpass.cpp.obj"
   "D:/Development/Projects/Magma/src/Magma.Core/Graphics/Renderpass/Swapchain.cpp" "D:/Development/Projects/Magma/cmake-build-debug/CMakeFiles/Magma.Core.dir/src/Magma.Core/Graphics/Renderpass/Swapchain.cpp.obj"
+  "D:/Development/Projects/Magma/src/Magma.Core/Utils/String.cpp" "D:/Development/Projects/Magma/cmake-build-debug/CMakeFiles/Magma.Core.dir/src/Magma.Core/Utils/String.cpp.obj"
   "D:/Development/Projects/Magma/src/Magma.Core/Window.cpp" "D:/Development/Projects/Magma/cmake-build-debug/CMakeFiles/Magma.Core.dir/src/Magma.Core/Window.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
@@ -43,6 +44,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../submodules/spdlog/include"
   "../src"
   "../submodules/glfw/include"
+  "_deps/glslang-src/SPIRV/.."
+  "_deps/glslang-src/glslang/.."
   "../submodules/glm"
   "D:/Development/VulkanSDK/1.2.135.0/Include"
   )
@@ -50,7 +53,12 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "D:/Development/Projects/Magma/cmake-build-debug/submodules/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/SPIRV/CMakeFiles/SPIRV.dir/DependInfo.cmake"
+  "D:/Development/Projects/Magma/cmake-build-debug/submodules/physfs/CMakeFiles/physfs-static.dir/DependInfo.cmake"
   "D:/Development/Projects/Magma/cmake-build-debug/submodules/spdlog/CMakeFiles/spdlog.dir/DependInfo.cmake"
+  "D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/glslang/CMakeFiles/glslang.dir/DependInfo.cmake"
+  "D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/OGLCompilersDLL/CMakeFiles/OGLCompiler.dir/DependInfo.cmake"
+  "D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-build/glslang/OSDependent/Windows/CMakeFiles/OSDependent.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

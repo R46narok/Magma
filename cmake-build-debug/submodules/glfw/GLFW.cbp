@@ -5,7 +5,7 @@
 		<Option title="GLFW"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="msvc8"/>
-		<Option virtualFolders="CMake Files\;CMake Files\submodules\;CMake Files\submodules\glfw\;CMake Files\submodules\glfw\CMake\;CMake Files\submodules\glfw\src\;CMake Files\submodules\spdlog\;CMake Files\submodules\spdlog\cmake\;CMake Files\submodules\glm\;CMake Files\submodules\glm\glm\;CMake Files\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\submodules\;CMake Files\submodules\glfw\;CMake Files\submodules\glfw\CMake\;CMake Files\submodules\glfw\src\;CMake Files\submodules\spdlog\;CMake Files\submodules\spdlog\cmake\;CMake Files\submodules\glm\;CMake Files\submodules\glm\glm\;CMake Files\submodules\physfs\;CMake Files\submodules\physfs\docs\;CMake Files\cmake\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\_deps\;CMake Files\cmake-build-debug\_deps\glslang-src\;CMake Files\cmake-build-debug\_deps\glslang-src\External\;CMake Files\cmake-build-debug\_deps\glslang-src\glslang\;CMake Files\cmake-build-debug\_deps\glslang-src\glslang\OSDependent\;CMake Files\cmake-build-debug\_deps\glslang-src\glslang\OSDependent\Windows\;CMake Files\cmake-build-debug\_deps\glslang-src\OGLCompilersDLL\;CMake Files\cmake-build-debug\_deps\glslang-src\SPIRV\;CMake Files\cmake-build-debug\_deps\glslang-src\gtests\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="D:/Development/Projects/Magma/cmake-build-debug/submodules/glfw"/>
@@ -231,11 +231,41 @@
 		<Unit filename="D:/Development/Projects/Magma/submodules/glm/glm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\submodules\glm\glm\"/>
 		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\submodules\physfs\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/submodules/physfs/docs/Doxyfile">
+			<Option virtualFolder="CMake Files\submodules\physfs\docs\"/>
+		</Unit>
 		<Unit filename="D:/Development/Projects/Magma/cmake/Ide.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
 		<Unit filename="D:/Development/Projects/Magma/cmake/Utils.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glslang-src\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/ChooseMSVCCRT.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glslang-src\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/External/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glslang-src\External\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glslang-src\glslang\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/glslang/OSDependent/Windows/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glslang-src\glslang\OSDependent\Windows\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/OGLCompilersDLL/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glslang-src\OGLCompilersDLL\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/SPIRV/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glslang-src\SPIRV\"/>
+		</Unit>
+		<Unit filename="D:/Development/Projects/Magma/cmake-build-debug/_deps/glslang-src/gtests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\glslang-src\gtests\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

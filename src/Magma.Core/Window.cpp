@@ -3,6 +3,7 @@
 //
 
 #include "Magma.Core/Window.h"
+#include "Magma.Core/Engine/Log.h"
 
 #include <GLFW/glfw3.h>
 #include <iostream>
@@ -14,7 +15,7 @@ namespace Magma
               _UserPtr({.iWidth = 1280, .iHeight = 640}),
               _Vsync(false)
     {
-        _Magma_Assert(glfwInit(), std::cout << "Could not init glfw\n");
+        _Magma_Assert(glfwInit(), "Could not init glfw");
 
         glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
         glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);

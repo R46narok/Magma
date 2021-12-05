@@ -24,8 +24,7 @@ namespace Magma
 
         auto device = Graphics::GetDevice()->GetVulkanDevice();
         auto physical = Graphics::GetPhysicalDevice()->GetVulkanPhysicalDevice();
-        auto result = vkCreateBuffer(device, &createInfo, nullptr, &_buffer);
-        _Magma_VkAssert(result, _Magma_Core_Error("Could not create buffer"));
+        Graphics::CheckVk(vkCreateBuffer(device, &createInfo, nullptr, &_buffer));
 
         VkMemoryRequirements memRequirements;
         vkGetBufferMemoryRequirements(device, _buffer, &memRequirements);
@@ -36,8 +35,7 @@ namespace Magma
             .memoryTypeIndex = FindMemoryType(physical, memRequirements.memoryTypeBits, props)
         };
 
-        result = vkAllocateMemory(device, &allocInfo, nullptr, &_bufferMemory);
-        _Magma_VkAssert(result, _Magma_Core_Error("Could not allocate buffer memory"));
+        Graphics::CheckVk(vkAllocateMemory(device, &allocInfo, nullptr, &_bufferMemory));
 
         vkBindBufferMemory(device, _buffer, _bufferMemory, 0);
     }

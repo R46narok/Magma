@@ -15,7 +15,8 @@
 
 namespace Magma
 {
-    _Magma_Dll std::optional<std::vector<char>> ReadFileBinary(const std::filesystem::path& path);
+    MAGMA_API std::optional<std::vector<char>> ReadFileBinary(const std::filesystem::path& path);
+    MAGMA_API std::optional<std::string> ReadFile(const std::filesystem::path& path);
 }
 
 #endif //MAGMA_FILE_H

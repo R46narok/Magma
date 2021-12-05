@@ -26,7 +26,7 @@ namespace Magma
     };
 
 
-    class _Magma_Dll Window : public Module::Registrar<Window>
+    class MAGMA_API Window : public Module::Registrar<Window>
     {
     private:
         inline static const bool Registered = Register(Stage::Pre);

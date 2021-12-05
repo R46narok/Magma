@@ -7,23 +7,15 @@
 
 #include "Magma.Core/Base.h"
 #include "Magma.Core/Types.h"
+#include "Magma.Core/Graphics/Pipelines/Shader.h"
 
 #include <string>
 #include <initializer_list>
+#include <utility>
 #include <vulkan/vulkan.h>
 
 namespace Magma
 {
-    enum class ShaderStage: uint8_t
-    {
-        Vertex = 0,
-        Tesselation,
-        Geometry,
-        Fragment,
-        Compute,
-        All
-    };
-
     enum class DescriptorType : uint8_t
     {
         UniformBuffer
@@ -32,8 +24,8 @@ namespace Magma
     class DescriptorSetBinding
     {
     public:
-        DescriptorSetBinding(const std::string& name, ShaderStage stage, DescriptorType type)
-            : Name(name), Stage(stage), Type(type)
+        DescriptorSetBinding(std::string&& name, ShaderStage stage, DescriptorType type)
+            : Name(std::move(name)), Stage(stage), Type(type)
         {
 
         }
@@ -43,7 +35,7 @@ namespace Magma
         std::string Name;
     };
 
-    class _Magma_Dll DescriptorSetLayout
+    class MAGMA_API DescriptorSetLayout
     {
     public:
         DescriptorSetLayout(const std::initializer_list<DescriptorSetBinding>& bindings);
@@ -56,7 +48,7 @@ namespace Magma
 
     class UniformBuffer;
 
-    class _Magma_Dll DescriptorSet
+    class MAGMA_API DescriptorSet
     {
     public:
         DescriptorSet() = default;

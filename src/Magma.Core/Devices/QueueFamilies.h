@@ -18,7 +18,7 @@ namespace Magma
     struct QueueFamilyIndices
     {
         std::optional<uint32_t> GraphicsFamily;
-        std::optional<uint32_t> PresentFamily;
+        std::optional<uint32_t> PresentFamily; // May be the same as the GraphicsFamily
         std::optional<uint32_t> ComputeFamily;
 
         [[nodiscard]] constexpr bool IsComplete() const noexcept
@@ -27,7 +27,12 @@ namespace Magma
         }
     };
 
-    _Magma_Dll QueueFamilyIndices FindQueueFamilies(VkPhysicalDevice device, VkSurfaceKHR surface);
+    /// TODO: Should prefer devices with the graphics and present queue having
+    /// the same indices.
+    /// \param device GPU to get queries from.
+    /// \param surface to be checked for compatibility with the present queue of the GPU.
+    /// \return
+    MAGMA_API QueueFamilyIndices FindQueueFamilies(VkPhysicalDevice device, VkSurfaceKHR surface);
 }
 
 #endif //MAGMA_QUEUE_FAMILIES_H

@@ -113,11 +113,16 @@ bin\Magma.Client.exe: CMakeFiles\Magma.Client.dir\build.make
 bin\Magma.Client.exe: Magma.Core.lib
 bin\Magma.Client.exe: submodules\glfw\src\glfw3.lib
 bin\Magma.Client.exe: D:\Development\VulkanSDK\1.2.135.0\Lib\vulkan-1.lib
+bin\Magma.Client.exe: _deps\glslang-build\SPIRV\SPIRVd.lib
+bin\Magma.Client.exe: _deps\glslang-build\glslang\glslangd.lib
+bin\Magma.Client.exe: _deps\glslang-build\OGLCompilersDLL\OGLCompilerd.lib
+bin\Magma.Client.exe: _deps\glslang-build\glslang\OSDependent\Windows\OSDependentd.lib
+bin\Magma.Client.exe: submodules\physfs\physfs-static.lib
 bin\Magma.Client.exe: submodules\spdlog\spdlogd.lib
 bin\Magma.Client.exe: CMakeFiles\Magma.Client.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Development\Projects\Magma\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin\Magma.Client.exe"
 	"D:\Development\Software\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\Magma.Client.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x64\mt.exe --manifests  -- C:\PROGRA~2\MICROS~4\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\Magma.Client.dir\objects1.rsp @<<
- /out:bin\Magma.Client.exe /implib:Magma.Client.lib /pdb:D:\Development\Projects\Magma\cmake-build-debug\bin\Magma.Client.pdb /version:0.0  /machine:x64 /debug /INCREMENTAL /subsystem:console  Magma.Core.lib submodules\glfw\src\glfw3.lib D:\Development\VulkanSDK\1.2.135.0\Lib\vulkan-1.lib submodules\spdlog\spdlogd.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+ /out:bin\Magma.Client.exe /implib:Magma.Client.lib /pdb:D:\Development\Projects\Magma\cmake-build-debug\bin\Magma.Client.pdb /version:0.0  /machine:x64 /debug /INCREMENTAL /subsystem:console  Magma.Core.lib submodules\glfw\src\glfw3.lib D:\Development\VulkanSDK\1.2.135.0\Lib\vulkan-1.lib _deps\glslang-build\SPIRV\SPIRVd.lib _deps\glslang-build\glslang\glslangd.lib _deps\glslang-build\OGLCompilersDLL\OGLCompilerd.lib _deps\glslang-build\glslang\OSDependent\Windows\OSDependentd.lib submodules\physfs\physfs-static.lib submodules\spdlog\spdlogd.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 	echo >nul && "D:\Development\Software\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -E copy_directory D:/Development/Projects/Magma/scripts D:/Development/Projects/Magma/cmake-build-debug/bin
 

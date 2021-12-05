@@ -15,11 +15,16 @@
 
 namespace Magma
 {
-    class _Magma_Dll Engine
+    /// Responsible for initialization of all modules from all stages.
+    /// Manages the lifetime of all modules.
+    class MAGMA_API Engine
     {
     public:
         Engine();
+        ~Engine();
 
+        /// Updates all stages of the engine if the window is not minimized.
+        /// TODO: If the latter is not minimized, ...
         void Run();
         void UpdateStage(Module::Stage stage);
     private:
