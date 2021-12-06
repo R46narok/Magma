@@ -19,22 +19,24 @@ namespace Magma
     class MAGMA_API GraphicsPipeline
     {
     public:
-        explicit GraphicsPipeline(const std::vector<std::filesystem::path>& shaders,
+        GraphicsPipeline(const std::vector<std::filesystem::path>& shaders,
                                   const Ref<Renderpass>& renderpass,
                                   const std::vector<Shader::VertexInput>& vertexInputs);
         ~GraphicsPipeline();
 
         void AllocateDescriptorSets(DescriptorSet* pSets, const Ref<DescriptorSetLayout>& layout, uint32_t count = 0);
 
-        [[nodiscard]] const VkPipeline& GetPipeline() const noexcept { return _Pipeline; }
-        [[nodiscard]] const VkPipelineLayout& GetPipelineLayout() const noexcept { return _Layout; }
+        [[nodiscard]] const VkPipeline& GetPipeline() const noexcept { return m_Pipeline; }
+        [[nodiscard]] const VkPipelineLayout& GetPipelineLayout() const noexcept { return m_PipelineLayout; }
     private:
         void CreateShaderProgram();
         void CreateDescriptorLayout();
         void CreateDescriptorPool();
         void CreatePipelineLayout();
+        void CreateAttributes();
         void CreatePipeline();
     private:
+        VkRenderPass m_Renderpass;
         Scope<Shader> m_Shader;
 
         std::vector<std::filesystem::path> m_ShaderStages;
@@ -42,10 +44,23 @@ namespace Magma
         std::vector<VkShaderModule> m_Modules;
         std::vector<VkPipelineShaderStageCreateInfo> m_Stages;
 
-        VkPipelineLayout _Layout;
-        VkPipeline _Pipeline;
+        VkPipelineLayout m_PipelineLayout;
+        VkPipeline m_Pipeline;
 
-        VkDescriptorPool _DescriptorPool;
+        VkDescriptorSetLayout m_DescriptorSetLayout;
+        VkDescriptorPool m_DescriptorPool;
+
+        VkPipelineVertexInputStateCreateInfo m_VertexInputState = {};
+        VkPipelineInputAssemblyStateCreateInfo m_InputAssemblyState = {};
+        VkPipelineRasterizationStateCreateInfo m_RasterizationState = {};
+        VkPipelineColorBlendAttachmentState m_ColorBlendAttachmentState = {};
+        VkPipelineColorBlendStateCreateInfo m_ColorBlendState = {};
+        VkPipelineDepthStencilStateCreateInfo m_DepthStencilState = {};
+        VkPipelineViewportStateCreateInfo m_ViewportState = {};
+        VkPipelineMultisampleStateCreateInfo m_MultisampleState = {};
+
+        VkViewport m_Viewport;
+        VkRect2D m_Scissor;
     };
 }
 

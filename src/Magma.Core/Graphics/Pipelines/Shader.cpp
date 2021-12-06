@@ -81,6 +81,39 @@ namespace Magma
         return VK_SHADER_STAGE_ALL;
     }
 
+    VkFormat Shader::GlTypeToVulkan(int32_t type)
+    {
+        switch (type)
+        {
+            case 0x1406: // GL_FLOAT
+                return VK_FORMAT_R32_SFLOAT;
+            case 0x8B50: // GL_FLOAT_VEC2
+                return VK_FORMAT_R32G32_SFLOAT;
+            case 0x8B51: // GL_FLOAT_VEC3
+                return VK_FORMAT_R32G32B32_SFLOAT;
+            case 0x8B52: // GL_FLOAT_VEC4
+                return VK_FORMAT_R32G32B32A32_SFLOAT;
+            case 0x1404: // GL_INT
+                return VK_FORMAT_R32_SINT;
+            case 0x8B53: // GL_INT_VEC2
+                return VK_FORMAT_R32G32_SINT;
+            case 0x8B54: // GL_INT_VEC3
+                return VK_FORMAT_R32G32B32_SINT;
+            case 0x8B55: // GL_INT_VEC4
+                return VK_FORMAT_R32G32B32A32_SINT;
+            case 0x1405: // GL_UNSIGNED_INT
+                return VK_FORMAT_R32_SINT;
+            case 0x8DC6: // GL_UNSIGNED_INT_VEC2
+                return VK_FORMAT_R32G32_SINT;
+            case 0x8DC7: // GL_UNSIGNED_INT_VEC3
+                return VK_FORMAT_R32G32B32_SINT;
+            case 0x8DC8: // GL_UNSIGNED_INT_VEC4
+                return VK_FORMAT_R32G32B32A32_SINT;
+            default:
+                return VK_FORMAT_UNDEFINED;
+        }
+    }
+
     constexpr EShLanguage GetEshLanguage(VkShaderStageFlags stageFlag)
     {
         switch (stageFlag)
@@ -386,6 +419,125 @@ namespace Magma
         }
 
         return sizeof(float) * components;
+    }
+
+    void Shader::BuildReflection()
+    {
+        std::map<VkDescriptorType, uint32_t> descriptorPoolCounts;
+
+        for (auto& [uniformBlockName, uniformBlock] : m_UniformBlocks)
+        {
+            auto descriptorType = VK_DESCRIPTOR_TYPE_MAX_ENUM;
+
+            switch (uniformBlock.GetType())
+            {
+                case UniformBlock::Type::Uniform:
+                    descriptorType = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER;
+                    m_DescriptorSetLayouts.emplace_back(UniformBuffer::GetDescriptorSetLayout(static_cast<uint32_t>(uniformBlock.binding), descriptorType, uniformBlock.stageFlags, 1));
+                    break;
+                case UniformBlock::Type::Storage:
+                    descriptorType = VK_DESCRIPTOR_TYPE_STORAGE_BUFFER;
+                    //m_DescriptorSetLayouts.emplace_back(StorageBuffer::GetDescriptorSetLayout(static_cast<uint32_t>(uniformBlock.binding), descriptorType, uniformBlock.stageFlags, 1));
+                    break;
+                case UniformBlock::Type::Push:
+                    break;
+                default:
+                    break;
+            }
+
+            IncrementDescriptorPool(descriptorPoolCounts, descriptorType);
+            m_DescriptorLocations.emplace(uniformBlockName, uniformBlock.binding);
+            m_DescriptorSizes.emplace(uniformBlockName, uniformBlock.size);
+        }
+
+        for (auto& [uniformName, uniform] : m_Uniforms)
+        {
+            auto descriptorType = VK_DESCRIPTOR_TYPE_MAX_ENUM;
+
+            switch(uniform.glType)
+            {
+                case 0x8B5E: // GL_SAMPLER_2D
+                case 0x904D: // GL_IMAGE_2D
+                case 0x8DC1: // GL_TEXTURE_2D_ARRAY
+                case 0x9108: // GL_SAMPLER_2D_MULTISAMPLE
+                case 0x9055: // GL_IMAGE_2D_MULTISAMPLE
+                    descriptorType = uniform.writeOnly ? VK_DESCRIPTOR_TYPE_STORAGE_IMAGE : VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER;
+                    //descriptorSetLayouts.emplace_back(Image2d::GetDescriptorSetLayout(static_cast<uint32_t>(uniform.binding), descriptorType, uniform.stageFlags, 1));
+                    break;
+                case 0x8B60: // GL_SAMPLER_CUBE
+                case 0x9050: // GL_IMAGE_CUBE
+                case 0x9054: // GL_IMAGE_CUBE_MAP_ARRAY
+                    descriptorType = uniform.writeOnly ? VK_DESCRIPTOR_TYPE_STORAGE_IMAGE : VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER;
+                    //descriptorSetLayouts.emplace_back(ImageCube::GetDescriptorSetLayout(static_cast<uint32_t>(uniform.binding), descriptorType, uniform.stageFlags, 1));
+                    break;
+                default:
+                    break;
+            }
+
+            IncrementDescriptorPool(descriptorPoolCounts, descriptorType);
+            m_DescriptorLocations.emplace(uniformName, uniform.binding);
+            m_DescriptorSizes.emplace(uniformName, uniform.size);
+        }
+
+        for (const auto& [type, descriptorCount] : descriptorPoolCounts)
+        {
+            VkDescriptorPoolSize poolSize{
+              .type = type,
+              .descriptorCount = descriptorCount
+            };
+
+            m_DescriptorPools.emplace_back(poolSize);
+        }
+
+        // TODO: This is a AMD workaround that works on NVidia too...
+        // We don't know the total usages of descriptor types by the pipeline.
+        m_DescriptorPools.resize(6);
+        m_DescriptorPools[0].type = VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER;
+        m_DescriptorPools[0].descriptorCount = 4096;
+        m_DescriptorPools[1].type = VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER;
+        m_DescriptorPools[1].descriptorCount = 2048;
+        m_DescriptorPools[2].type = VK_DESCRIPTOR_TYPE_STORAGE_IMAGE;
+        m_DescriptorPools[2].descriptorCount = 2048;
+        m_DescriptorPools[3].type = VK_DESCRIPTOR_TYPE_UNIFORM_TEXEL_BUFFER;
+        m_DescriptorPools[3].descriptorCount = 2048;
+        m_DescriptorPools[4].type = VK_DESCRIPTOR_TYPE_STORAGE_TEXEL_BUFFER;
+        m_DescriptorPools[4].descriptorCount = 2048;
+        m_DescriptorPools[5].type = VK_DESCRIPTOR_TYPE_STORAGE_BUFFER;
+        m_DescriptorPools[5].descriptorCount = 2048;
+
+        std::sort(m_DescriptorSetLayouts.begin(), m_DescriptorSetLayouts.end(), [](const VkDescriptorSetLayoutBinding &l, const VkDescriptorSetLayoutBinding &r){
+            return l.binding < r.binding;
+        });
+
+        if (m_DescriptorSetLayouts.empty() == false)
+            m_LastDescriptorBinding = m_DescriptorSetLayouts.back().binding;
+
+        for (const auto& descriptor : m_DescriptorSetLayouts)
+            m_DescriptorTypes.emplace(descriptor.binding, descriptor.descriptorType);
+
+        uint32_t currentOffset = 4;
+
+        for (const auto &[attributeName, attribute] : m_Attributes)
+        {
+            VkVertexInputAttributeDescription attributeDescription = {};
+            attributeDescription.location = static_cast<uint32_t>(attribute.location);
+            attributeDescription.binding = 0;
+            attributeDescription.format = GlTypeToVulkan(attribute.glType);
+            attributeDescription.offset = currentOffset;
+            m_AttributeDescriptions.emplace_back(attributeDescription);
+            currentOffset += attribute.size;
+        }
+    }
+
+    void Shader::IncrementDescriptorPool(std::map<VkDescriptorType, uint32_t>& descriptorPoolCount, VkDescriptorType type)
+    {
+        if (type == VK_DESCRIPTOR_TYPE_MAX_ENUM)
+            return;
+
+        if (auto it = descriptorPoolCount.find(type); it != descriptorPoolCount.end())
+            it->second++;
+        else
+            descriptorPoolCount.emplace(type, 1);
     }
 
     void CopyShaderStageCreateInfo(const std::vector<Shader>& src, std::vector<VkPipelineShaderStageCreateInfo>& dst)

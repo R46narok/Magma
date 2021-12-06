@@ -206,13 +206,19 @@ namespace Magma
         Shader();
         ~Shader();
 
+        void BuildReflection();
         VkShaderModule CreateShaderModule(const std::filesystem::path& file, const std::string &moduleCode, const std::string &preamble, VkShaderStageFlagBits stageFlags);
 
+        static VkFormat GlTypeToVulkan(int32_t type);
+
+        [[nodiscard]] const std::vector<VkDescriptorSetLayoutBinding> &GetDescriptorSetLayouts() const { return m_DescriptorSetLayouts; }
+        [[nodiscard]] const std::vector<VkDescriptorPoolSize> &GetDescriptorPools() const { return m_DescriptorPools; }
     private:
         void LoadUniformBlock(glslang::TProgram& program, VkShaderStageFlagBits stageFlag, int32_t i);
         void LoadUniform(glslang::TProgram& program, VkShaderStageFlagBits stageFlag, int32_t i);
         void LoadAttribute(glslang::TProgram& program, VkShaderStageFlagBits stageFlag, int32_t i);
         int32_t ComputeSize(const glslang::TType *ttype);
+        static void IncrementDescriptorPool(std::map<VkDescriptorType, uint32_t>& descriptorPoolCount, VkDescriptorType type);
     private:
         std::vector<std::filesystem::path> m_Stages;
 
@@ -222,6 +228,15 @@ namespace Magma
 
         std::array<std::optional<uint32_t>, 3> m_LocalSizes;
 
+        std::map<std::string, uint32_t> m_DescriptorLocations;
+        std::map<std::string, uint32_t> m_DescriptorSizes;
+        std::map<uint32_t, VkDescriptorType> m_DescriptorTypes;
+
+        uint32_t m_LastDescriptorBinding;
+        std::vector<VkDescriptorPoolSize> m_DescriptorPools;
+        std::vector<VkDescriptorSetLayoutBinding> m_DescriptorSetLayouts;
+
+        std::vector<VkVertexInputAttributeDescription> m_AttributeDescriptions;
     };
 
     void MAGMA_API CopyShaderStageCreateInfo(const std::vector<Shader>& src, std::vector<VkPipelineShaderStageCreateInfo>& dst);

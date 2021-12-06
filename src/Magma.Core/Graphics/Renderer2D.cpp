@@ -84,10 +84,6 @@ namespace Magma
             UniformBuffers.push_back(CreateRef<UniformBuffer>(sizeof(UniformBufferObject)));
         }
 
-        /*Shader vertex("vert.spv", ShaderStage::Vertex);
-        Shader fragment("frag.spv", ShaderStage::Fragment);
-        vertex.PushUniform({"UniformBufferObject", 0, 0, sizeof(UniformBufferObject), ShaderStage::Vertex});*/
-
         std::vector<std::filesystem::path> shaders{"shader.vert", "shader.frag"};
         std::vector<Shader::VertexInput> input {Shader::VertexInput({Vertex2D::GetBinding()}, Vertex2D::GetAttributes())};
         _Pipeline = CreateRef<GraphicsPipeline>(shaders, _Renderpass, input);

@@ -13,6 +13,8 @@ namespace Magma
     {
     public:
         explicit UniformBuffer(uint32_t size);
+
+        static VkDescriptorSetLayoutBinding GetDescriptorSetLayout(uint32_t binding, VkDescriptorType descriptorType, VkShaderStageFlags stage, uint32_t count);
     };
 }
 

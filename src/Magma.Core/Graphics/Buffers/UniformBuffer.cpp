@@ -12,5 +12,19 @@ namespace Magma
 
     }
 
+    VkDescriptorSetLayoutBinding
+    UniformBuffer::GetDescriptorSetLayout(uint32_t binding, VkDescriptorType descriptorType, VkShaderStageFlags stage, uint32_t count)
+    {
+        VkDescriptorSetLayoutBinding descriptorSetLayoutBinding = {
+                .binding = binding,
+                .descriptorType = descriptorType,
+                .descriptorCount = 1,
+                .stageFlags = stage,
+                .pImmutableSamplers = nullptr
+        };
+
+        return descriptorSetLayoutBinding;
+    }
+
 }
 
